@@ -1,0 +1,14 @@
+// =================================================================
+// 	Sovereign Agricultural 
+// 	Base
+// =================================================================
+
+html {
+	font-size: 1.1em;
+}
+
+body {
+	@include transition(all 0.5s ease-in-out);
+	position: relative;
+	background: $colorWhite;
+}
