@@ -18,6 +18,9 @@
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/apple-touch-icon.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
 
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+
 		<script src="https://use.typekit.net/gce6yyu.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<!--[if IE]>

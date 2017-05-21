@@ -244,12 +244,12 @@ h1 {
   letter-spacing: 1px; }
 
 h2 {
-  font-size: 1.424em; }
+  font-size: 1.7em; }
 
 h3 {
   display: inline-block;
-  color: #fff;
-  font-size: 1em;
+  font-size: 2.4em;
+  text-align: center;
   text-transform: uppercase; }
 
 h4 {
@@ -265,7 +265,8 @@ h5.underline {
 
 p {
   color: #3B3B3B;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.6em;
   padding: 0.4em 0 0.4em 0; }
 
 ul li {
@@ -893,5 +894,50 @@ header {
       width: 50%;
       left: 0;
       z-index: 10; }
+
+.info {
+  width: 100%;
+  overflow: auto;
+  height: auto;
+  display: block;
+  padding: 160px 0;
+  position: relative; }
+  .info .col-6 {
+    display: block;
+    margin: 0 auto;
+    float: none; }
+  .info h3 {
+    color: #203B4F;
+    display: block;
+    text-align: center; }
+    .info h3:after {
+      content: "";
+      display: block;
+      background: #A32937;
+      width: 80px;
+      height: 8px;
+      margin: 30px auto 35px auto; }
+  .info p {
+    text-align: center; }
+  .info.image-info .col-6 {
+    float: left;
+    position: relative; }
+  .info.image-info h3 {
+    text-align: left; }
+  .info.image-info h3:after {
+    margin: 30px 0 35px 0; }
+  .info.image-info p {
+    text-align: left;
+    padding-right: 50px; }
+  .info.image-info .col-6 img {
+    width: 100%; }
+  .info.image-info .vertical-align {
+    position: absolute;
+    top: 10px;
+    background: red; }
+  @media (max-width: 960px) {
+    .info .col-6 {
+      float: left;
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

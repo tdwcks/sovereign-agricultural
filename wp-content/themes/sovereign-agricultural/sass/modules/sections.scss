@@ -45,3 +45,74 @@
 	}
 }
 
+.info {
+	width: 100%;
+	overflow: auto;
+	height: auto;
+	display: block;
+	padding: 160px 0;
+	position: relative;
+
+	.col-6 {
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+
+	h3 {
+		color: $colorOne;
+		display: block;
+		text-align: center;
+
+		&:after {
+			content: "";
+			display: block;
+			background: $colorTwo;
+			width: 80px;
+			height: 8px;
+			margin: 30px auto 35px auto;
+
+		}
+	}
+
+	p {
+		text-align: center;
+	}
+
+	&.image-info {
+		.col-6 {
+			float: left;
+			position: relative;
+		}
+
+		h3 {
+			text-align: left;
+		}
+
+		h3:after {
+			margin: 30px 0 35px 0;
+		}
+
+		p {
+			text-align: left;
+			padding-right: 50px;
+		}
+
+		.col-6 img {
+			width: 100%;
+		}
+
+		.vertical-align {
+			position: absolute;
+			top: 10px;
+			background: red;
+		}
+	}
+
+	@include mq("small", "max-width") { 
+		.col-6 {
+			float: left;
+			width: 100%;
+		}
+	}
+}

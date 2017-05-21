@@ -1,12 +1,9 @@
 <?php get_header(); ?>
 	
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-		<!-- Example only -->
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<?php
 
-		// check if the repeater field has rows of data
 		if( have_rows('slider') ):
 
 			?>
@@ -26,9 +23,7 @@
 		       </div><?php 
 
 		    endwhile;
-
-		else :
-
+ 
 			?>
 		       </div>
 		       <!-- Add Pagination -->
@@ -37,25 +32,64 @@
 		       <div class="swiper-button-next"></div>
 		       <div class="swiper-button-prev"></div>
 		   </div>		
-		</section> <?php 
+		</section> <?php endif; ?>
 
-		    // no rows found
+		<?php endwhile; ?>
+		<?php else : ?>
 
-		endif;
+		<?php endif; ?>
 
-		?>
-		
 		<section class="info">
 			<div class="grid-container">
-				
+				<div class="col-6">
+					<h3><?php the_field('headline_one'); ?></h3>
+					<?php the_field('copy_one'); ?>
+				</div>
+			</div>
+		</section>
+		<section class="info image-info">
+			<div class="grid-container">
+				<div class="col-6">
+					<div class="vertical-align">
+						<h3><?php the_field('headline_two'); ?></h3>
+						<?php the_field('copy_two'); ?>
+					</div>
+				</div>
+				<div class="col-6">
+					<img src="<?php the_field('image_two'); ?>"> 
+				</div>
+			</div>
+		</section>
+		<section class="info">
+			<div class="grid-container">
+				<div class="col-6">
+					<h3><?php the_field('headline_three'); ?></h3>
+					<?php the_field('copy_three'); ?>
+				</div>
+			</div>
+		</section>
+		<?php if( have_rows('homepage_links') ): ?>
+
+		<section class="tripple-box">
+			<?php while ( have_rows('homepage_links') ) : the_row(); ?>
+			<a class="box" href="<?php the_sub_field('links'); ?>">
+				<img src="<?php the_sub_field('image'); ?>">
+				<h4><?php the_sub_field('title'); ?></h4>
+			</div>
+			<?php endwhile; ?>
+		</section>
+
+		<section class="quote">
+			<div class="grid-container">
+				<div class="col-6">
+					<?php the_field('quote'); ?>
+					<img src="<?php echo get_site_url(); ?>/wp-content/themes/sovereign-agricultural/img/signature.png">
+					<p>John Smith, <p>Managing Director</p></p>
+				</div>
 			</div>
 		</section>
 
-	<?php endwhile; ?>
-	<?php else : ?>
+		<?php endif; ?>
 
-		<!-- No post for that query -->
-
-	<?php endif; ?>
 
 <?php get_footer(); ?>
