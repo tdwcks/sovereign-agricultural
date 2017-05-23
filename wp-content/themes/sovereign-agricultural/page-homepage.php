@@ -50,10 +50,8 @@
 		<section class="info image-info">
 			<div class="grid-container">
 				<div class="col-6">
-					<div class="vertical-align">
-						<h3><?php the_field('headline_two'); ?></h3>
-						<?php the_field('copy_two'); ?>
-					</div>
+					<h3><?php the_field('headline_two'); ?></h3>
+					<?php the_field('copy_two'); ?>
 				</div>
 				<div class="col-6">
 					<img src="<?php the_field('image_two'); ?>"> 
@@ -75,7 +73,7 @@
 			<a class="box" href="<?php the_sub_field('links'); ?>">
 				<img src="<?php the_sub_field('image'); ?>">
 				<h4><?php the_sub_field('title'); ?></h4>
-			</div>
+			</a>
 			<?php endwhile; ?>
 		</section>
 
@@ -84,7 +82,9 @@
 				<div class="col-6">
 					<?php the_field('quote'); ?>
 					<img src="<?php echo get_site_url(); ?>/wp-content/themes/sovereign-agricultural/img/signature.png">
-					<p>John Smith, <p>Managing Director</p></p>
+					<div class="name">
+						<p>John Smith,<p class="light">Managing Director</p></p>
+					</div>
 				</div>
 			</div>
 		</section>
