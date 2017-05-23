@@ -66,9 +66,10 @@ header {
 			display: block;
 			width:15px;
 			height: 15px;
-			background: $colorTwo;
+			background: #ffffff url("img/phone.svg") no-repeat center center;
+			background-size: 100% 100%;
 			float: left;
-			margin-right: 13px;
+			margin-right: 10px;
 		}
 	}
 }

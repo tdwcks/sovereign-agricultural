@@ -242,11 +242,12 @@ h1 {
   letter-spacing: 1px; }
 
 h2 {
-  font-size: 1.7em; }
+  font-size: 1.7em;
+  line-height: 1em; }
 
 h3 {
   display: inline-block;
-  font-size: 2.4em;
+  font-size: 1.9em;
   text-align: center;
   text-transform: uppercase; }
 
@@ -264,7 +265,7 @@ h5.underline {
 
 p {
   color: #3B3B3B;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.6em;
   padding: 0.4em 0 0.4em 0; }
 
@@ -855,9 +856,10 @@ header {
       display: block;
       width: 15px;
       height: 15px;
-      background: #A32937;
+      background: #ffffff url("img/phone.svg") no-repeat center center;
+      background-size: 100% 100%;
       float: left;
-      margin-right: 13px; }
+      margin-right: 10px; }
 
 .hero {
   width: 100%;
@@ -872,10 +874,11 @@ header {
       height: auto; }
     .hero .swiper-slide h2 {
       text-transform: uppercase;
-      font-size: 3.2em;
+      font-size: 2.7em;
       text-align: center;
       color: #fff;
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      margin-bottom: 15px; }
     .hero .swiper-slide p {
       color: #fff;
       font-size: 1.3em;
@@ -894,12 +897,45 @@ header {
       transform: translate(-50%, -50%);
       z-index: 10; }
 
+.hero-static {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  position: relative; }
+  .hero-static img {
+    width: 100%;
+    height: auto; }
+  .hero-static h2 {
+    text-transform: uppercase;
+    font-size: 2.7em;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 0;
+    margin-bottom: 15px; }
+  .hero-static p {
+    color: #fff;
+    font-size: 1.3em;
+    line-height: 1.3;
+    text-align: center; }
+  .hero-static .col-6 {
+    position: absolute;
+    height: auto;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10; }
+
 .info {
   width: 100%;
   overflow: auto;
   height: auto;
   display: block;
-  padding: 160px 0;
+  padding: 100px 0;
   position: relative; }
   .info .col-6 {
     display: block;
@@ -918,20 +954,47 @@ header {
       margin: 30px auto 35px auto; }
   .info p {
     text-align: center; }
-  .info.image-info .col-6 {
-    float: left;
+  .info.image-info {
+    padding: 0;
+    overflow: hidden;
     position: relative;
-    margin: 0; }
-  .info.image-info h3 {
-    text-align: left;
-    margin-top: 50px; }
-  .info.image-info h3:after {
-    margin: 30px 0 35px 0; }
-  .info.image-info p {
-    text-align: left;
-    padding-right: 50px; }
-  .info.image-info .col-6 img {
-    width: 100%; }
+    height: 550px; }
+    .info.image-info .grid-container {
+      height: 550px; }
+    .info.image-info .col-6 {
+      float: left;
+      margin: 0 auto;
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      margin: 0; }
+    .info.image-info .vertical-align {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+      -o-transform: translate(0%, -50%);
+      transform: translate(0%, -50%); }
+    .info.image-info h3 {
+      text-align: left; }
+    .info.image-info h3:after {
+      margin: 30px 0 35px 0; }
+    .info.image-info p {
+      text-align: left;
+      padding-right: 50px; }
+    .info.image-info .image-half {
+      width: 50%;
+      float: right;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0; }
+    .info.image-info .image-half img {
+      width: 130%;
+      top: 0;
+      left: 50%; }
   @media (max-width: 960px) {
     .info .col-6 {
       float: left;
@@ -977,7 +1040,7 @@ header {
     top: 50%;
     -webkit-font-smoothing: subpixel-antialiased;
     left: 50%;
-    font-size: 2em;
+    font-size: 1.7em;
     color: #fff;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -1000,7 +1063,7 @@ header {
       display: block; }
 
 .quote {
-  padding: 160px 0;
+  padding: 100px 0;
   height: auto;
   overflow: auto;
   width: 100%; }
@@ -1026,5 +1089,48 @@ header {
       .quote .name p.light {
         font-weight: 500;
         margin-left: 5px; }
+
+.big-image {
+  width: 100%;
+  overflow: hidden;
+  height: auto; }
+  .big-image img {
+    width: 100%; }
+
+.logos {
+  height: auto;
+  overflow: hidden;
+  padding: 3px 0 50px 0; }
+  .logos .pinboard {
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 120px;
+    position: relative; }
+  .logos .pin {
+    background: #ffffff url("img/pin.png") no-repeat center center;
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .logos .pin:nth-child(2) {
+    right: 10px;
+    left: auto; }
+  .logos .pin:nth-child(3) {
+    top: auto;
+    bottom: 10px; }
+  .logos .pin:nth-child(4) {
+    top: auto;
+    bottom: 10px;
+    left: auto;
+    right: 10px; }
+  .logos .col-3 img {
+    width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

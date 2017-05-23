@@ -3,12 +3,10 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<section class="hero-static">
-			<div class="grid-container">
 				<div class="col-6">
-					<h1><?php the_title(); ?></h1>
+					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
 				</div>
-			</div>
 			<img src="<?php the_post_thumbnail(); ?>">
 		</section>
 		<section class="info">
@@ -22,12 +20,14 @@
 		<section class="info image-info">
 			<div class="grid-container">
 				<div class="col-6">
-					<h3><?php the_field('headline_two'); ?></h3>
-					<?php the_field('copy_two'); ?>
+					<div class="vertical-align">
+						<h3><?php the_field('headline_two'); ?></h3>
+						<?php the_field('copy_two'); ?>
+					</div>
 				</div>
-				<div class="col-6">
-					<img src="<?php the_field('image_two'); ?>"> 
-				</div>
+			</div>
+			<div class="image-half">
+				<img src="<?php the_field('image_two'); ?>"> 
 			</div>
 		</section>
 		<section class="info">

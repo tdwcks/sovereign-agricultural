@@ -3,12 +3,10 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<section class="hero-static">
-			<div class="grid-container">
 				<div class="col-6">
-					<h1><?php the_title(); ?></h1>
+					<h2><?php the_title(); ?></h2>
 					<?php the_content(); ?>
 				</div>
-			</div>
 			<img src="<?php the_post_thumbnail(); ?>">
 		</section>
 		<section class="info">
@@ -38,13 +36,15 @@
 					<div class="pin"></div>
 					<div class="pin"></div>
 					<?php if( have_rows('brands') ): ?>
-					<div class="col-3">
 						<?php while ( have_rows('brands') ) : the_row(); ?>
+					<div class="col-3">
+						
 							<a href="<?php the_sub_field('link'); ?>">
 								<img src="<?php the_sub_field('logo'); ?>"> 
 							</a>
-						<?php endwhile; ?>
-					</div>	
+						
+					</div>
+					<?php endwhile; ?>
 					<?php endif; ?>			
 				</div>
 			</div>

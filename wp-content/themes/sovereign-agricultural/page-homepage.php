@@ -50,12 +50,14 @@
 		<section class="info image-info">
 			<div class="grid-container">
 				<div class="col-6">
-					<h3><?php the_field('headline_two'); ?></h3>
-					<?php the_field('copy_two'); ?>
+					<div class="vertical-align">
+						<h3><?php the_field('headline_two'); ?></h3>
+						<?php the_field('copy_two'); ?>
+					</div>
 				</div>
-				<div class="col-6">
-					<img src="<?php the_field('image_two'); ?>"> 
-				</div>
+			</div>
+			<div class="image-half">
+				<img src="<?php the_field('image_two'); ?>"> 
 			</div>
 		</section>
 		<section class="info">
