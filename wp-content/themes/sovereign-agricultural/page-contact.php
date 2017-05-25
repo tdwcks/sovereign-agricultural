@@ -11,6 +11,14 @@
 		</div>
 		<img src="<?php the_post_thumbnail(); ?>">
 	</section>
+	<section class="info">
+		<div class="grid-container">
+			<div class="col-6">
+				<h3><?php the_field('headline_one'); ?></h3>
+				<?php the_field('copy_one'); ?>
+			</div>
+		</div>
+	</section>
 	<section class="contact-form">
 		<div class="grid-container">	
 				<?php echo do_shortcode('[contact-form-7 id="125" title="Contact form 1"]') ?>
@@ -21,7 +29,9 @@
 	mapboxgl.accessToken = 'pk.eyJ1IjoidGR3Y2tzIiwiYSI6IlhwMGlGR28ifQ.irq5Rbn1WvGb_VIwn1auNA';
 	var map = new mapboxgl.Map({
 	container: 'map',
-	style: 'mapbox://styles/mapbox/light-v9'
+	style: 'mapbox://styles/mapbox/streets-v10',
+	center: [-1.707,53.574], // starting position
+  	zoom: 17 // starting zoom
 	});
 	</script>
 	<?php endwhile; endif; ?>

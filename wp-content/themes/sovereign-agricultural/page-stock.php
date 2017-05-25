@@ -23,10 +23,12 @@
 		<?php while ( have_rows('stock') ) : the_row(); ?>
 			<div class="grid-container">
 				<div class="tractor">
-					<div class="col-6">
-						<img src="<?php the_sub_field('image'); ?>">
+					<div class="col-8">
+						<div class="image">
+							<img src="<?php the_sub_field('image'); ?>">
+						</div>
 					</div>
-					<div class="col-6">
+					<div class="col-4">
 						<h3><?php the_sub_field('title'); ?></h3>
 						<h4><?php the_sub_field('strapline'); ?></h4>
 						<p><?php the_sub_field('content'); ?></p>

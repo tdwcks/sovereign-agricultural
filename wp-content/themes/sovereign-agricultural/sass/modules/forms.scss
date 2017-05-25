@@ -16,11 +16,12 @@ form {
 		}
 	}
 
-	input[type="text"], input[type="email"], input[type="submit"], textarea, button {
+	input[type="text"], input[type="email"], input[type="tel"], input[type="submit"], textarea, button {
 		width: 100%;
 		padding: 15px 15px;
 		margin: 20px 0;
 		font-family: $base-font-family;
+		border: 1px solid #777777;
 		background: #EEF0F1;
 		border: 0;
 		font-size: 0.9em;
@@ -34,6 +35,20 @@ form {
 			outline: 0;
 			border: 0;
 			background: darken(#EEF0F1, 5%);
+		}
+	}
+
+	input[type="submit"] {
+		width: 200px;
+		margin-top: 0;
+		float: right;
+		background: $colorOne;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #fff;
+
+		&:hover {
+			background: $colorTwo;
 		}
 	}
 
@@ -52,10 +67,12 @@ form {
 		background: $colorType;
 		cursor: pointer;
 		color: #fff;
+		@include transition(all, 0.5s, ease-in-out);
 		float: right;
 
 		&:hover {
 			background: darken($colorType, 10%);
+			cursor: pointer;
 		}
 	}
 }

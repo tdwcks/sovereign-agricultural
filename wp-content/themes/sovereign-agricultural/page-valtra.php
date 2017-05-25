@@ -3,12 +3,10 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<section class="hero-static">
-		<div class="grid-container">
 			<div class="col-6">
-				<h1><?php the_title(); ?></h1>
+				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 			</div>
-		</div>
 		<img src="<?php the_post_thumbnail(); ?>">
 	</section>
 	<section class="info">
@@ -38,10 +36,12 @@
 			<div class="grid-container">
 				<?php while ( have_rows('tractors') ) : the_row(); ?>
 					<div class="tractor">
-						<div class="col-6">
-							<img src="<?php the_sub_field('image'); ?>">
+						<div class="col-8">
+							<div class="image-square">
+								<img src="<?php the_sub_field('image'); ?>">
+							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-4">
 							<h3><?php the_sub_field('title'); ?></h3>
 							<h4><?php the_sub_field('strapline'); ?></h4>
 							<p><?php the_sub_field('content'); ?></p>

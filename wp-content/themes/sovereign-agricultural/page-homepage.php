@@ -35,7 +35,7 @@
 		</section> <?php endif; ?>
 
 		<?php endwhile; ?>
-		<?php else : ?>
+		
 
 		<?php endif; ?>
 
@@ -92,6 +92,8 @@
 		</section>
 
 		<?php endif; ?>
+
+		<h1>Test!</h1>
 
 
 <?php get_footer(); ?>
