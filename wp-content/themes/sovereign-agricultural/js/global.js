@@ -3,28 +3,24 @@
 // 	Global Javascript Functions
 // =================================================================
 
-$( ".description-holder" ).on( "click", function() {
+// Valtra Switcher
+
+$( ".product-picker nav ul li a" ).on( "click", function() {
+	$(".product-picker nav ul li a").removeClass('active');
+	$(".series").removeClass('active');
  	$(this).toggleClass('active');
+ 	var name = $(this).attr("name");
+ 	$('#' + name).toggleClass('active');
 });
 
+// sticky Valtra 
 
-$( ".cutout-image" ).on( "click", function() {
-		$(".cutout-image").removeClass('active');
-});
+ $(document).ready(function(){
+ 	var top = $('header').outerHeight();
+    $(".product-picker").sticky({topSpacing:top});
+  });
 
-$( ".map-marker" ).on( "click", function() {
- 	var id = $(this).attr("name");
- 	$(".cutout-image").removeClass('active');
- 	$("#"+id).addClass('active');
-});
-
-var embedServices = [
-  window.embetter.services.youtube,
-  window.embetter.services.vimeo,
-  window.embetter.services.kuula
-];
-window.embetter.utils.initMediaPlayers(document.body, embedServices);
-
+// Swiper Javascript
 
 var swiper = new Swiper('.swiper-container', {
     pagination: '.swiper-pagination',

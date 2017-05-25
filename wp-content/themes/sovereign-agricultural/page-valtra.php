@@ -22,17 +22,19 @@
 			<?php if( have_rows('series') ): ?>
 				<nav>
 					<ul>
-					<?php while ( have_rows('series') ) : the_row(); ?>
-						<li><a title="<?php the_sub_field('series_slug'); ?>" class="js-valtra-link"><?php the_sub_field('series_title'); ?></a></li>
+					<?php $count = 0; while ( have_rows('series') ) : the_row(); $count++;?>
+						<li><a name="<?php the_sub_field('series_slug'); ?>" class="js-valtra-link <?php if($count == 1){echo ' active';} ?>"><?php the_sub_field('series_title'); ?></a></li>
 					<?php endwhile; ?>
 					</ul>
 				</nav>
 			<?php endif; ?>
 		</div>
 	</section>
-	<?php if( have_rows('series') ): ?>
-		<?php while ( have_rows('series') ) : the_row(); ?>
-		<section id="<?php the_sub_field('series_slug'); ?>" class="series">
+					
+	<?php if( have_rows('series') ): $count = 0; ?>
+		<?php while ( have_rows('series') ) : the_row(); $count++; ?>
+
+		<section id="<?php the_sub_field('series_slug'); ?>" class="series <?php if($count == 1){echo ' active';} ?>">
 			<div class="grid-container">
 				<?php while ( have_rows('tractors') ) : the_row(); ?>
 					<div class="tractor">

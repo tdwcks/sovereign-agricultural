@@ -1269,6 +1269,13 @@ header {
   .logos .col-3 img {
     width: 100%; }
 
+.sticky-wrapper {
+  z-index: 100;
+  position: relative; }
+  .sticky-wrapper.is-sticky .product-picker {
+    border-top: 1px solid #E0E0E0;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+
 .product-picker {
   width: 100%;
   background: #FDFDFD;
@@ -1277,7 +1284,8 @@ header {
   overflow: auto;
   top: 0;
   padding: 18px 0 14px 0;
-  z-index: 100;
+  z-index: 1000;
+  position: relative;
   font-weight: 700;
   text-transform: uppercase; }
   .product-picker nav {
@@ -1302,19 +1310,18 @@ header {
       font-size: 0.89em; }
       .product-picker nav ul li a:hover {
         color: #A32937; }
-    .product-picker nav ul li:first-child a {
+    .product-picker nav a.active {
       color: #A32937; }
-    .product-picker nav ul li:first-child a:hover {
+    .product-picker nav a.active:hover {
       color: #203B4F; }
 
 .series {
   width: 100%;
   height: auto;
   overflow: hidden;
-  padding: 100px 0; }
+  padding: 100px 0;
+  display: none; }
   .series.active {
-    display: block; }
-  .series:first-child {
     display: block; }
 
 .tractor {
