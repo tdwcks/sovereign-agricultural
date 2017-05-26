@@ -1007,7 +1007,11 @@ header {
     overflow: hidden; }
     .hero .swiper-slide img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      top: auto;
+      position: absolute;
+      bottom: 0px;
+      left: 0; }
     .hero .swiper-slide h2 {
       text-transform: uppercase;
       font-size: 2.7em;
@@ -1040,7 +1044,9 @@ header {
   position: relative; }
   .hero-static img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    top: auto;
+    bottom: 0; }
   .hero-static h2 {
     text-transform: uppercase;
     font-size: 2.7em;
@@ -1274,7 +1280,7 @@ header {
   position: relative; }
   .sticky-wrapper.is-sticky .product-picker {
     border-top: 1px solid #E0E0E0;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); }
 
 .product-picker {
   width: 100%;
