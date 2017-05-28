@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>phone - FontAwesome</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="24" font-family="FontAwesome" font-weight="normal">
+        <g id="Home_Nav" transform="translate(-38.000000, -497.000000)" fill="#FFFFFF">
+            <g id="//-HEADER-//" transform="translate(0.000000, 16.000000)">
+                <g id="::-nav" transform="translate(0.000000, 100.000000)">
+                    <g id="phone" transform="translate(0.000000, 360.000000)">
+                        <text id="phone---FontAwesome">
+                            <tspan x="38" y="40"></tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

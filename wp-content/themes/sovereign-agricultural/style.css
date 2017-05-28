@@ -823,6 +823,11 @@ footer {
       font-weight: 600; }
     footer .btn-holder a:last-child {
       float: right; }
+  @media (max-width: 960px) {
+    footer .col-6 {
+      width: 100%; }
+    footer .menu-header-menu-container {
+      display: none; } }
 
 .bottom-bar {
   width: 100%;
@@ -838,6 +843,11 @@ footer {
     border-bottom: 1px solid #fff;
     text-decoration: none;
     font-weight: 600; }
+  @media (max-width: 960px) {
+    .bottom-bar {
+      padding: 10px 0; }
+      .bottom-bar p {
+        line-height: 1.2em; } }
 
 form {
   padding-top: 10px; }
@@ -952,6 +962,16 @@ header {
       font-size: 0.89em; }
       header nav ul li a:hover {
         color: #A32937; }
+  header .hamburger {
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    margin-right: 25px;
+    margin-top: 3px;
+    float: right;
+    background: #ffffff url("img/hamburger.svg") no-repeat center center;
+    background-size: 100% 100%; }
   header .telephone {
     text-decoration: none;
     color: #203B4F;
@@ -963,10 +983,65 @@ header {
       display: block;
       width: 15px;
       height: 15px;
-      background: #ffffff url("img/phone.svg") no-repeat center center;
+      background: url("img/phone-white.svg") no-repeat center center;
       background-size: 100% 100%;
       float: left;
       margin-right: 10px; }
+  @media (max-width: 960px) {
+    header {
+      z-index: 1000; }
+      header h1 {
+        margin-left: 30px; }
+      header .grid-container {
+        width: 100%; }
+      header .hamburger {
+        display: block; }
+      header nav {
+        display: none;
+        width: 100%;
+        margin-top: 16px;
+        background: #203B4F;
+        margin-left: 0;
+        padding: 12px 0; }
+      header nav div ul {
+        width: 100%;
+        height: auto;
+        overflow: hidden; }
+      header nav div ul li {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        overflow: hidden; }
+      header nav div ul li a {
+        padding: 12px 30px;
+        box-sizing: border-box;
+        padding-left: 30px;
+        font-size: 1.2em;
+        color: #fff;
+        display: block;
+        width: 100%; }
+      header .telephone {
+        background: #A32937;
+        float: left;
+        display: none;
+        margin-left: 0;
+        font-size: 1.2em;
+        padding: 20px 30px;
+        width: 100%;
+        box-sizing: border-box;
+        color: #fff; }
+        header .telephone:before {
+          margin-top: 1px;
+          width: 18px;
+          height: 18px; }
+      header.nav-active {
+        padding-bottom: 0; }
+        header.nav-active .hamburger {
+          background: #ffffff url("img/cross.svg") no-repeat center center; }
+        header.nav-active nav {
+          display: block; }
+        header.nav-active .telephone {
+          display: block; } }
 
 .btn-one {
   background: #A32937;
@@ -1036,6 +1111,17 @@ header {
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 10; }
+  @media (max-width: 960px) {
+    .hero .swiper-slide {
+      height: 85vh; }
+    .hero .slide-description {
+      width: 100%; }
+    .hero .swiper-slide img {
+      width: 200%; }
+    .hero .swiper-slide h2 {
+      font-size: 2em; }
+    .hero p {
+      font-size: 1.1em; } }
 
 .hero-static {
   width: 100%;
@@ -1071,6 +1157,13 @@ header {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 10; }
+  @media (max-width: 960px) {
+    .hero-static img {
+      width: 250%;
+      bottom: auto;
+      top: 0; }
+    .hero-static .col-6 {
+      width: 90%; } }
 
 .info {
   width: 100%;
@@ -1138,9 +1231,31 @@ header {
       top: 0;
       left: 50%; }
   @media (max-width: 960px) {
-    .info .col-6 {
-      float: left;
-      width: 100%; } }
+    .info {
+      padding: 50px 0; }
+      .info.image-info, .info.image-info .grid-container {
+        height: auto;
+        position: relative;
+        overflow: hidden; }
+      .info.image-info .vertical-align {
+        position: relative;
+        -webkit-transform: translate(0%, 0%);
+        -moz-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+        -o-transform: translate(0%, 0%);
+        transform: translate(0%, 0%); }
+      .info.image-info .image-half {
+        position: relative;
+        width: 100%;
+        margin-top: 50px; }
+      .info.image-info h3:after {
+        margin: 30px auto 35px auto; }
+      .info.image-info h3, .info.image-info p {
+        text-align: center;
+        padding-right: 0; }
+      .info .col-6 {
+        float: left;
+        width: 100%; } }
 
 .tripple-box .box {
   width: 33.3%;
@@ -1203,6 +1318,9 @@ header {
       background: #A32937;
       margin-top: 10px;
       display: block; }
+@media (max-width: 960px) {
+  .tripple-box .box {
+    width: 100%; } }
 
 .quote {
   padding: 100px 0;
@@ -1231,6 +1349,57 @@ header {
       .quote .name p.light {
         font-weight: 500;
         margin-left: 5px; }
+  @media (max-width: 960px) {
+    .quote {
+      padding: 50px 0 30px 0; }
+      .quote .col-6 {
+        width: 100%; }
+      .quote .name {
+        text-align: center; } }
+
+.contact-cta {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #203B4F;
+  padding: 60px 0 50px 0; }
+  .contact-cta h3 {
+    color: #fff;
+    font-size: 1.6em; }
+  .contact-cta h4 {
+    font-size: 1.3em;
+    float: left;
+    color: #fff;
+    display: block;
+    border-bottom: 2px solid #fff; }
+  .contact-cta .btn-one {
+    margin-top: -6px;
+    background: #fff;
+    color: #203B4F;
+    float: right;
+    padding: 15px 50px; }
+    .contact-cta .btn-one:hover {
+      background: #A32937;
+      color: #fff; }
+  @media (max-width: 960px) {
+    .contact-cta .col-6 {
+      width: 100%; }
+    .contact-cta h3 {
+      text-align: center;
+      font-size: 1.7em; }
+    .contact-cta h4 {
+      display: inline-block;
+      margin: 20px 0 30px 0;
+      text-align: center;
+      width: 100%;
+      border-bottom: 0; }
+    .contact-cta .btn-one {
+      display: inline-block;
+      float: none;
+      margin: 0 auto;
+      display: block;
+      width: 140px;
+      text-align: center; } }
 
 .big-image {
   width: 100%;
@@ -1274,6 +1443,17 @@ header {
     right: 10px; }
   .logos .col-3 img {
     width: 100%; }
+  @media (max-width: 960px) {
+    .logos .pinboard {
+      padding: 40px; }
+    .logos .pin {
+      width: 20px;
+      height: 20px; }
+    .logos .col-3 {
+      width: -moz-calc(50% - 15px);
+      width: -webkit-calc(50% - 15px);
+      width: calc(50% - 15px);
+      float: left; } }
 
 .sticky-wrapper {
   z-index: 100;
@@ -1320,6 +1500,11 @@ header {
       color: #A32937; }
     .product-picker nav a.active:hover {
       color: #203B4F; }
+  @media (max-width: 960px) {
+    .product-picker nav ul li {
+      margin-right: 15px; }
+    .product-picker nav ul li a {
+      font-size: 1em; } }
 
 .series {
   width: 100%;
@@ -1329,6 +1514,9 @@ header {
   display: none; }
   .series.active {
     display: block; }
+  @media (max-width: 960px) {
+    .series {
+      padding: 0 0 50px 0; } }
 
 .tractor {
   margin: 50px 0;
@@ -1353,6 +1541,23 @@ header {
     color: #A32937; }
   .tractor .image-square, .tractor .image {
     width: 85%; }
+  @media (max-width: 960px) {
+    .tractor .col-4 {
+      -webkit-transform: translate(0%, 0%);
+      -moz-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+      -o-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+      position: relative;
+      width: 100%; }
+    .tractor .col-8 {
+      position: relative;
+      width: 100%;
+      margin-bottom: 30px;
+      height: auto;
+      overflow: hidden; }
+    .tractor .image-square, .tractor .image {
+      width: 100%; } }
 
 .tractor:nth-child(even) .col-4 {
   left: 0;
@@ -1418,30 +1623,5 @@ header {
   .post-content img {
     width: 100%;
     height: auto; }
-
-.contact-cta {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  background: #203B4F;
-  padding: 60px 0 50px 0; }
-  .contact-cta h3 {
-    color: #fff;
-    font-size: 1.6em; }
-  .contact-cta h4 {
-    font-size: 1.3em;
-    float: left;
-    color: #fff;
-    display: block;
-    border-bottom: 2px solid #fff; }
-  .contact-cta .btn-one {
-    margin-top: -6px;
-    background: #fff;
-    color: #203B4F;
-    float: right;
-    padding: 15px 50px; }
-    .contact-cta .btn-one:hover {
-      background: #A32937;
-      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

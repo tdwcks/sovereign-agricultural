@@ -54,6 +54,18 @@ header {
 		}
 	}
 
+	.hamburger {
+		cursor: pointer;
+		display: none;
+		width: 32px;
+		height: 32px;
+		margin-right: 25px;
+		margin-top: 3px;
+		float: right;
+		background: #ffffff url("img/hamburger.svg") no-repeat center center;
+		background-size: 100% 100%;
+	}
+
 	.telephone {
 		text-decoration: none;
 		color: $colorOne;
@@ -66,10 +78,92 @@ header {
 			display: block;
 			width:15px;
 			height: 15px;
-			background: #ffffff url("img/phone.svg") no-repeat center center;
+			background: url("img/phone-white.svg") no-repeat center center;
 			background-size: 100% 100%;
 			float: left;
 			margin-right: 10px;
+		}
+	}
+
+	@include mq("small", "max-width") {
+		z-index: 1000;
+
+		h1 {
+			margin-left: 30px;
+		}
+
+		.grid-container {
+			width: 100%;
+		}
+
+		.hamburger {
+			display: block;
+		}
+
+		nav {
+			display: none;
+			width: 100%;
+			margin-top: 16px;
+			background: $colorOne;
+			margin-left: 0;
+			padding: 12px 0;
+		}
+
+		nav div ul {
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+		}
+
+		nav div ul li {
+			width: 100%;
+			margin: 0;
+			height: auto;
+			overflow: hidden;
+		}
+
+		nav div ul li a {
+			padding: 12px 30px;
+			box-sizing: border-box;
+			padding-left: 30px;
+			font-size: 1.2em;
+			color: #fff;
+			display: block;
+			width: 100%;
+		}
+
+		.telephone { 
+			background: $colorTwo;
+			float: left;
+			display: none;
+			margin-left: 0;
+			font-size: 1.2em;
+			padding: 20px 30px;
+			width: 100%;
+			box-sizing: border-box;
+			color: #fff;
+
+			&:before {
+				margin-top: 1px;
+				width:18px;
+				height: 18px;
+			}
+		}
+
+		&.nav-active {
+			padding-bottom: 0;
+
+			.hamburger {
+				background: #ffffff url("img/cross.svg") no-repeat center center;
+			}
+
+			nav {
+				display: block;
+			}
+
+			.telephone {
+				display: block;
+			}
 		}
 	}
 }

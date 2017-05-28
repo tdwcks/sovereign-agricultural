@@ -1,5 +1,5 @@
 // =================================================================
-// 	Calais Jungle
+// 	Sovereign Agricultural
 // 	Global Javascript Functions
 // =================================================================
 
@@ -13,7 +13,13 @@ $( ".product-picker nav ul li a" ).on( "click", function() {
  	$('#' + name).toggleClass('active');
 });
 
-// sticky Valtra 
+// Mobile Menu 
+
+$(".hamburger" ).on( "click", function() {
+	$('header').toggleClass('nav-active');
+});
+
+// Sticky Valtra 
 
  $(document).ready(function(){
  	var top = $('header').outerHeight();

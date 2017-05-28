@@ -102,6 +102,16 @@ footer {
 
 		}
 	}
+
+	@include mq("small", "max-width") {
+		.col-6 {
+			width: 100%;
+		}
+
+		.menu-header-menu-container {
+			display: none;
+		}
+	}
 }
 
 .bottom-bar {
@@ -121,5 +131,13 @@ footer {
 		border-bottom: 1px solid #fff;
 		text-decoration: none;
 		font-weight: 600;
+	}
+
+	@include mq("small", "max-width") {
+		padding: 10px 0;
+
+		p {
+			line-height: 1.2em;
+		}
 	}
 }

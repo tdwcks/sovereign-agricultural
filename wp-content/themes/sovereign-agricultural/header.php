@@ -38,7 +38,8 @@
 
 	<header>
 		<div class="grid-container">
-			<h1>Sovereign<span>Agricultural</span></h1>
+			<a href="<?php echo get_site_url(); ?>"><h1>Sovereign<span>Agricultural</span></h1></a>
+			<a class="hamburger"></a>
 			<nav>
 				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 			</nav>
