@@ -6,12 +6,13 @@
 .hero {
 	width: 100%;
 	height: 90vh;
-	background: $colorWhite;
+	background: none;
 
 	.swiper-slide {
 		width: 100%;
-		height: 90vh;
+		height: 100vh;
 		overflow: hidden;
+		background: none;
 
 		img {
 			width: 100%;

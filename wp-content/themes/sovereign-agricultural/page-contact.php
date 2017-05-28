@@ -29,10 +29,39 @@
 	mapboxgl.accessToken = 'pk.eyJ1IjoidGR3Y2tzIiwiYSI6IlhwMGlGR28ifQ.irq5Rbn1WvGb_VIwn1auNA';
 	var map = new mapboxgl.Map({
 	container: 'map',
-	style: 'mapbox://styles/mapbox/streets-v10',
-	center: [-1.707,53.574], // starting position
+	style: 'mapbox://styles/mapbox/outdoors-v10',
+	center: [-1.705,53.5752], // starting position
+	scrollZoom: false,
   	zoom: 17 // starting zoom
 	});
+	map.on('load', () => {
+    map.loadImage('<?php echo get_site_url(); ?>/wp-content/themes/sovereign-agricultural/img/map-pin.png', (error, image) => {
+        if (error) throw error;
+        map.addImage('cat', image);
+        map.addLayer({
+            "id": "points",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-1.705,53.5752]
+                        }
+                    }]
+                }
+            },
+            "layout": {
+                "icon-image": "cat",
+                "icon-size": 1
+            }
+        });
+    });
+});
+
 	</script>
 	<?php endwhile; endif; ?>
 <?php get_footer(); ?>

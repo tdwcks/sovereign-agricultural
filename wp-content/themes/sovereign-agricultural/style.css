@@ -36,7 +36,9 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   position: relative;
-  background: #FDFDFD; }
+  background: #FDFDFD;
+  background: #ffffff url("img/texture.png") no-repeat center center;
+  background-size: 100% auto; }
 
 .grid-container {
   position: relative;
@@ -920,6 +922,24 @@ form {
 #form-messages.success {
   color: #3FBC33; }
 
+div.wpcf7-response-output {
+  display: inline-block;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: -50px !important;
+  display: inline-block;
+  border: none; }
+
+div.wpcf7-validation-errors {
+  display: inline-block;
+  margin-top: -50px;
+  border: none !important; }
+
+div.wpcf7-mail-sent-ok {
+  display: inline-block;
+  margin-top: -50px;
+  border: none !important; }
+
 header {
   position: fixed;
   width: 100%;
@@ -983,7 +1003,7 @@ header {
       display: block;
       width: 15px;
       height: 15px;
-      background: url("img/phone-white.svg") no-repeat center center;
+      background: url("img/phone.svg") no-repeat center center;
       background-size: 100% 100%;
       float: left;
       margin-right: 10px; }
@@ -1032,6 +1052,7 @@ header {
         color: #fff; }
         header .telephone:before {
           margin-top: 1px;
+          background: url("img/phone-white.svg") no-repeat center center;
           width: 18px;
           height: 18px; }
       header.nav-active {
@@ -1075,11 +1096,12 @@ header {
 .hero {
   width: 100%;
   height: 90vh;
-  background: #FDFDFD; }
+  background: none; }
   .hero .swiper-slide {
     width: 100%;
-    height: 90vh;
-    overflow: hidden; }
+    height: 100vh;
+    overflow: hidden;
+    background: none; }
     .hero .swiper-slide img {
       width: 100%;
       height: auto;

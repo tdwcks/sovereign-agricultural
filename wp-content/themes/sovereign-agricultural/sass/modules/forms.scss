@@ -93,3 +93,24 @@ form {
 #form-messages.success {
 	color: #3FBC33;
 }
+
+div.wpcf7-response-output {
+	display: inline-block;
+	margin: 0 !important;
+	padding: 0 !important;
+	margin-top: -50px !important;
+	display: inline-block;
+	border: none;
+}
+
+div.wpcf7-validation-errors {
+	display: inline-block;
+	margin-top: -50px;
+	border: none !important;
+}
+
+div.wpcf7-mail-sent-ok {
+	display: inline-block;
+	margin-top: -50px;
+	border: none !important;
+}

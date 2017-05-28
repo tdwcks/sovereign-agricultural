@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="269px" height="311px" viewBox="0 0 269 311" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-21.2%" y="-15.1%" width="142.4%" height="130.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="10.0485491" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <path d="M157.074779,307.58242 C157.074779,307.58242 228.15102,217.908126 228.15102,178.653802 C228.15102,139.399478 196.329103,107.57756 157.074779,107.57756 C117.820454,107.57756 85.9985372,139.399478 85.9985372,178.653802 C85.9985372,217.908126 157.074779,307.58242 157.074779,307.58242 Z" id="Oval" fill="#000000" opacity="0.179857337" filter="url(#filter-1)" transform="translate(157.074779, 207.579990) rotate(35.000000) translate(-157.074779, -207.579990) "></path>
+            <path d="M102.5,286.374457 C102.5,286.374457 204.25,158.000204 204.25,101.805231 C204.25,45.6102573 158.694973,0.055230564 102.5,0.055230564 C46.3050267,0.055230564 0.75,45.6102573 0.75,101.805231 C0.75,158.000204 102.5,286.374457 102.5,286.374457 Z" id="Oval" fill="#FFFFFF"></path>
+            <text id="sovereign-agricultur" font-family="Industry-Demi, Industry" font-size="30" font-weight="500" line-spacing="23">
+                <tspan x="21" y="107" fill="#982836">sovereign</tspan>
+                <tspan x="163.02" y="112.2" font-size="40" fill="#3C444E"></tspan>
+                <tspan x="22.687" y="135.2" font-size="23" fill="#273A51">agricultural</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

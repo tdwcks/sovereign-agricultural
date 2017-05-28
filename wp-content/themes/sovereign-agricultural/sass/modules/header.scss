@@ -78,7 +78,7 @@ header {
 			display: block;
 			width:15px;
 			height: 15px;
-			background: url("img/phone-white.svg") no-repeat center center;
+			background: url("img/phone.svg") no-repeat center center;
 			background-size: 100% 100%;
 			float: left;
 			margin-right: 10px;
@@ -145,6 +145,7 @@ header {
 
 			&:before {
 				margin-top: 1px;
+				background: url("img/phone-white.svg") no-repeat center center;
 				width:18px;
 				height: 18px;
 			}
