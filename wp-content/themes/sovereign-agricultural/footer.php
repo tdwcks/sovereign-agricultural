@@ -12,14 +12,14 @@
 	</section>
 	<footer>
 		<div class="grid-container">
-			<div class="col-6">
+			<div class="row">
 				<h4>Sovereign <span>Agricultural</span></h4>
 				<p>Woolrow Lane, Shelley, Huddersfield, HD8 8LW</p>
-				<p>Tel: 01484 603682   |   Email: info@sovereinagricultural.com   |   Fax: 01484 604782</p>
+				<p>Tel: <a href="tel:01484 603682">01484 603682</a>  |   Email: <a href="mailto:info@sovereinagricultural.com">info@sovereinagricultural.com</a>   |   Fax: 01484 604782</p>
 				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 				<div class="btn-holder">
 					<a href="https://www.facebook.com/sovereignagricutural/" class="btn-two">Facebook</a>
-					<a href="#" class="btn-two">Back To Top</a>
+					<a href="#" class="btn-two scroll-to-top">Back To Top</a>
 				</div>
 			</div>
 		</div>

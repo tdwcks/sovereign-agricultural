@@ -19,6 +19,11 @@ $(".hamburger" ).on( "click", function() {
 	$('header').toggleClass('nav-active');
 });
 
+// Scroll to top 
+$(".scroll-to-top" ).on( "click", function() {
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+
 // Sticky Valtra 
 
  $(document).ready(function(){

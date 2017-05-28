@@ -85,6 +85,17 @@ header {
 		}
 	}
 
+	@include mq("medium", "max-width") {
+		.telephone {
+			display: none;
+		}
+
+		nav {
+			float: right;
+			margin-left: 0;
+		}
+	}
+
 	@include mq("small", "max-width") {
 		z-index: 1000;
 
@@ -133,6 +144,7 @@ header {
 		}
 
 		.telephone { 
+			display: block;
 			background: $colorTwo;
 			float: left;
 			display: none;

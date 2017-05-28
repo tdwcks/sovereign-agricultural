@@ -17,7 +17,7 @@ footer {
 		color: $colorTwo;
 	}
 
-	.col-6 {
+	.row {
 		display: block;
 		margin: 0 auto;
 		float: none;
@@ -34,6 +34,18 @@ footer {
 			padding: 10px 0;
 		}
 
+		p a {
+			color: $colorOne;
+			border-bottom: 1px solid $colorTwo;
+			padding-bottom: -2px;
+			@include transition(all, 0.3s, ease-in-out);
+			text-decoration: none;
+		}
+
+		p a:hover {
+			color: $colorTwo;
+		}
+
 		p:last-child {
 			margin-bottom: 20px;	
 		}
@@ -48,11 +60,11 @@ footer {
 		color: $colorOne;
 		text-transform: uppercase;
 		text-decoration: none;
-		width: 590px;
 		display: block;
 		margin: 0 auto;
 		height: auto;
 		overflow: hidden;
+		width: 590px;
 		padding-top: 7px;
 
 		ul li a {
@@ -94,7 +106,6 @@ footer {
 			color: $colorTwo;
 			text-transform: uppercase;
 			font-weight: 600;
-
 		}
 
 		a:last-child {
@@ -104,9 +115,6 @@ footer {
 	}
 
 	@include mq("small", "max-width") {
-		.col-6 {
-			width: 100%;
-		}
 
 		.menu-header-menu-container {
 			display: none;
