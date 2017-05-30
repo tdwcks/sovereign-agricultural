@@ -15,7 +15,7 @@
 				<div class="row">
 					<h4>Sovereign <span>Agricultural</span></h4>
 					<p>Woolrow Lane, Shelley, Huddersfield, HD8 8LW</p>
-					<p>Tel: <a href="tel:01484 603682">01484 603682</a>  |   Email: <a href="mailto:info@sovereinagricultural.com">info@sovereinagricultural.com</a>   |   Fax: 01484 604782</p>
+					<p>Tel: <a href="tel:01484 603682">01484 603682</a>  |   Email: <a href="mailto:info@sovagric.com">info@sovagric.com</a>   |   Fax: 01484 604782</p>
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 					<div class="btn-holder">
 						<div class="btn">
