@@ -80,6 +80,7 @@ body {
 
 @media (max-width: 760px) {
   width: 90%; }
+
 .row + .row {
   margin-top: 30px; }
 
@@ -594,9 +595,9 @@ small, .font_small {
 @media (max-width: 960px) {
   .swiper-button-next, .swiper-button-prev {
     display: block; }
-
   .swiper-pagination {
     display: none; } }
+
 .swiper-slide {
   text-align: left; }
 
@@ -1013,7 +1014,7 @@ header {
       display: block;
       width: 15px;
       height: 15px;
-      background: url("img/phone.svg") no-repeat center center;
+      background: url("/img/phone.svg") no-repeat center center;
       background-size: 100% 100%;
       float: left;
       margin-right: 10px; }
@@ -1357,6 +1358,7 @@ header {
       background: #A32937;
       margin-top: 10px;
       display: block; }
+
 @media (max-width: 960px) {
   .tripple-box .box {
     width: 100%; } }
@@ -1601,8 +1603,10 @@ header {
 .tractor:nth-child(even) .col-4 {
   left: 0;
   right: auto; }
+
 .tractor:nth-child(even) .col-8 {
   float: right; }
+
 .tractor:nth-child(even) .col-8 .image-square {
   float: right; }
 
@@ -1628,18 +1632,22 @@ header {
 .news-item a {
   color: #203B4F;
   text-decoration: none; }
+
 .news-item img {
   width: 100%;
   height: auto; }
+
 .news-item h2 {
   color: #A32937;
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 25px;
   padding-bottom: 10px; }
+
 .news-item .btn-one {
   margin-top: 15px;
   background: #203B4F; }
+
 .news-item:hover > .btn-one {
   background: #A32937; }
 
@@ -1662,5 +1670,3 @@ header {
   .post-content img {
     width: 100%;
     height: auto; }
-
-/*# sourceMappingURL=style.css.map */

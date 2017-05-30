@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	
+
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<?php
@@ -17,13 +17,13 @@
 		        // display a sub field value
 		       ?>
 		       <div class="swiper-slide">
-		       		<img src="<?php the_sub_field('image'); ?>"> 
+		       		<img src="<?php the_sub_field('image'); ?>">
 		       <?php ?><div class="slide-description"><h2><?php the_sub_field('headline'); ?></h2>
 		       <?php ?><?php the_sub_field('paragraph'); ?></div>
-		       </div><?php 
+		       </div><?php
 
 		    endwhile;
- 
+
 			?>
 		       </div>
 		       <!-- Add Pagination -->
@@ -31,11 +31,11 @@
 		       <!-- Add Arrows -->
 		       <div class="swiper-button-next"></div>
 		       <div class="swiper-button-prev"></div>
-		   </div>		
+		   </div>
 		</section> <?php endif; ?>
 
 		<?php endwhile; ?>
-		
+
 
 		<?php endif; ?>
 
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="image-half">
-				<img src="<?php the_field('image_two'); ?>"> 
+				<img src="<?php the_field('image_two'); ?>">
 			</div>
 		</section>
 		<section class="info">

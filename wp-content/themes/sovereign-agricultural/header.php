@@ -19,7 +19,7 @@
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
 
 		<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
 
 		<script src="https://use.typekit.net/gce6yyu.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -29,6 +29,8 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?ver=' . filemtime( get_stylesheet_directory() . '/style.css'); ?>" type="text/css" />
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+
+		<script src="https://use.fontawesome.com/b94ee9d7cf.js"></script>
 
 		<?php wp_head(); ?>
 
