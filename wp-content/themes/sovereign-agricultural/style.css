@@ -805,7 +805,8 @@ footer {
     clear: both;
     margin-top: -6px;
     display: block;
-    color: #A32937; }
+    color: #A32937;
+    letter-spacing: .25px; }
   footer .row {
     display: block;
     margin: 0 auto;
@@ -1037,7 +1038,8 @@ header {
     font-size: 0.75em;
     clear: both;
     display: block;
-    color: #A32937; }
+    color: #A32937;
+    letter-spacing: .25px; }
   header nav {
     float: left;
     margin-left: 300px; }
