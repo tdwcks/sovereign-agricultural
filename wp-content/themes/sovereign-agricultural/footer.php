@@ -18,8 +18,16 @@
 					<p>Tel: <a href="tel:01484 603682">01484 603682</a>  |   Email: <a href="mailto:info@sovereinagricultural.com">info@sovereinagricultural.com</a>   |   Fax: 01484 604782</p>
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 					<div class="btn-holder">
-						<a href="https://www.facebook.com/sovereignagricutural/" class="btn-two">Facebook</a>
-						<a href="#" class="btn-two scroll-to-top">Back To Top</a>
+						<div class="btn">
+							<img src="<?= get_template_directory_uri(); ?>/img/facebook_icon.svg" width="60">
+							<a href="https://www.facebook.com/sovereignagricutural/">
+								Facebook
+							</a>
+						</div>
+						<div class="btn">
+							<img src="<?= get_template_directory_uri(); ?>/img/back_to_top.svg" width="60">
+							<a href="#" class="scroll-to-top">Back To Top</a>
+						</div>
 					</div>
 				</div>
 			</div>

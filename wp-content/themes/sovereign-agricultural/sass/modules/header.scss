@@ -43,6 +43,7 @@ header {
 			float: left;
 			margin-right: 30px;
 			list-style-type: none;
+
 		}
 
 		ul li a {
@@ -50,6 +51,7 @@ header {
 			color: $colorOne;
 			text-decoration: none;
 			font-size: 0.89em;
+			font-family: $base-font-family;
 
 			&:hover {
 				color: $colorTwo;
