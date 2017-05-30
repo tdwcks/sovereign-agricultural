@@ -38,13 +38,15 @@
 
 	<body <?php body_class(); ?>>
 
-	<header>
-		<div class="grid-container">
-			<a href="<?php echo get_site_url(); ?>"><h1>Sovereign<span>Agricultural</span></h1></a>
-			<a class="hamburger"></a>
-			<nav>
-				<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-			</nav>
-			<a href="tel:01484 603682" class="telephone">01484 603682</a>
-		</div>
-	</header>
+	<div class="page-wrap">
+
+		<header>
+			<div class="grid-container">
+				<a href="<?php echo get_site_url(); ?>"><h1>Sovereign<span>Agricultural</span></h1></a>
+				<a class="hamburger"></a>
+				<nav>
+					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+				</nav>
+				<a href="tel:01484 603682" class="telephone">01484 603682</a>
+			</div>
+		</header>

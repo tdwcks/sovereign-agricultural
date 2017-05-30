@@ -36,6 +36,12 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   position: relative;
+  background: #FDFDFD; }
+
+.page-wrap {
+  max-width: 2200px;
+  margin: 0 auto;
+  position: relative;
   background: #FDFDFD;
   background: #ffffff url("img/texture.png") no-repeat center center;
   background-size: 100% auto; }
@@ -962,6 +968,7 @@ header {
   height: auto;
   overflow: auto;
   top: 0;
+  left: 0;
   padding: 18px 0 14px 0;
   z-index: 100;
   font-weight: 700;

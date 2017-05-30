@@ -1,5 +1,5 @@
 // =================================================================
-// 	Sovereign Agricultural 
+// 	Sovereign Agricultural
 // 	Base
 // =================================================================
 
@@ -9,6 +9,13 @@ html {
 
 body {
 	 -webkit-font-smoothing: antialiased;
+	position: relative;
+	background: $colorWhite;
+}
+
+.page-wrap {
+	max-width: 2200px;
+	margin: 0 auto;
 	position: relative;
 	background: $colorWhite;
 	background: #ffffff url("img/texture.png") no-repeat center center;
