@@ -1,5 +1,5 @@
 // =================================================================
-// 	Sovereign Agricultural 
+// 	Sovereign Agricultural
 // 	Sections
 // =================================================================
 
@@ -481,10 +481,6 @@
 		right: 10px;
 	}
 
-	.col-3 img {
-		width: 100%;
-	}
-
 	@include mq("small", "max-width") {
 		.pinboard {
 			padding: 40px;
@@ -578,7 +574,7 @@
 	overflow: hidden;
 	padding: 100px 0;
 	display: none;
-	
+
 	&.active {
 		display: block;
 	}
