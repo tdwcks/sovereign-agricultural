@@ -1322,6 +1322,7 @@ header {
       padding-right: 50px; }
     .info.image-info .image-half {
       width: 50%;
+      height: 100%;
       float: right;
       position: absolute;
       z-index: 10;
