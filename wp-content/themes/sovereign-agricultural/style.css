@@ -274,12 +274,14 @@ h5.underline {
 
 p {
   color: #3B3B3B;
-  font-size: 1em;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 1.1em;
   line-height: 1.6em;
   padding: 0.4em 0 0.4em 0; }
 
 ul li {
-  color: #3B3B3B; }
+  color: #3B3B3B;
+  font-family: "Avenir Next", sans-serif; }
 
 p.serif {
   font-size: 1.1em; }
@@ -306,6 +308,34 @@ span {
 
 small, .font_small {
   font-size: 0.8em; }
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("sass/fonts/avenir-next-regular.eot");
+  src: url("sass/fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("sass/fonts/avenir-next-regular.woff2") format("woff2"), url("sass/fonts/avenir-next-regular.woff") format("woff"), url("sass/fonts/avenir-next-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("sass/fonts/avenir-next-italic.eot");
+  src: url("sass/fonts/avenir-next-italic.eot?#iefix") format("embedded-opentype"), url("sass/fonts/avenir-next-italic.woff2") format("woff2"), url("sass/fonts/avenir-next-italic.woff") format("woff"), url("sass/fonts/avenir-next-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("sass/fonts/avenir-next-bold.eot");
+  src: url("sass/fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("sass/fonts/avenir-next-bold.woff2") format("woff2"), url("sass/fonts/avenir-next-bold.woff") format("woff"), url("sass/fonts/avenir-next-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url("sass/fonts/avenir-next-thin.eot");
+  src: url("sass/fonts/avenir-next-thin.eot?#iefix") format("embedded-opentype"), url("sass/fonts/avenir-next-thin.woff2") format("woff2"), url("sass/fonts/avenir-next-thin.woff") format("woff"), url("sass/fonts/avenir-next-thin.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
 
 .image {
   position: relative;
