@@ -1147,7 +1147,7 @@ header {
       left: 0; }
     .hero .swiper-slide h2 {
       text-transform: uppercase;
-      font-size: 2.7em;
+      font-size: 3.8em;
       text-align: center;
       color: #fff;
       padding-bottom: 0;
@@ -1193,7 +1193,7 @@ header {
     bottom: 0; }
   .hero-static h2 {
     text-transform: uppercase;
-    font-size: 2.7em;
+    font-size: 3.8em;
     text-align: center;
     color: #fff;
     padding-bottom: 0;
@@ -1500,6 +1500,15 @@ header {
     bottom: 10px;
     left: auto;
     right: 10px; }
+  .logos .col-3 {
+    width: -moz-calc(25% - 24px);
+    width: -webkit-calc(25% - 24px);
+    width: calc(25% - 24px);
+    text-align: center;
+    float: left;
+    margin-bottom: 100px; }
+  .logos .col-3:last-child, .logos .col-3:nth-last-child(2) {
+    margin-bottom: 0; }
   @media (max-width: 960px) {
     .logos .pinboard {
       padding: 40px; }
