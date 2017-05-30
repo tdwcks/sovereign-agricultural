@@ -78,17 +78,18 @@ header {
 		float: right;
 		padding-top: 10px;
 		font-size: 0.89;
+		i { color: $colorTwo; margin-right: 5px; font-size: 1.1em; }
 
-		&:before {
-			content: "";
-			display: block;
-			width:15px;
-			height: 15px;
-			background: url("img/phone.svg") no-repeat center center;
-			background-size: 100% 100%;
-			float: left;
-			margin-right: 10px;
-		}
+		// &:before {
+		// 	content: "";
+		// 	display: block;
+		// 	width:15px;
+		// 	height: 15px;
+		// 	background: url("img/phone.svg") no-repeat center center;
+		// 	background-size: 100% 100%;
+		// 	float: left;
+		// 	margin-right: 10px;
+		// }
 	}
 
 	@include mq("medium", "max-width") {

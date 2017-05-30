@@ -47,7 +47,6 @@
 
 		  ga('create', 'UA-100138649-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
 	</head>
 
@@ -62,6 +61,6 @@
 				<nav>
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 				</nav>
-				<a href="tel:01484 603682" class="telephone">01484 603682</a>
+				<a href="tel:01484 603682" class="telephone"><i class="fa fa-phone"></i> 01484 603682</a>
 			</div>
 		</header>
