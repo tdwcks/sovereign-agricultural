@@ -8,7 +8,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php the_title(''); ?> | Sovereign Agricultural</title>
 
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
