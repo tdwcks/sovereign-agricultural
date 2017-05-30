@@ -24,6 +24,8 @@
 				</div>
 			</div>
 		</footer>
+
+		<img src="<?= get_template_directory_uri(); ?>/img/footer_grass.png" class="hay-bale">
 		<div class="bottom-bar">
 			<div class="grid-container">
 				<p>&copy; <?php echo date("Y"); ?> Sovereign Agricultural services Limited. all rights reserved. designed by <a href="https://aye.agency">aye.agency</a></p>
