@@ -14,9 +14,14 @@
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/apple-touch-icon.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/apple-touch-icon.png">
+	    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/favicon-32x32.png" sizes="32x32">
+	    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/favicon-16x16.png" sizes="16x16">
+	    <link rel="manifest" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/manifest.json">
+	    <link rel="mask-icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	    <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicons/favicon.ico?v2">
+	    <meta name="msapplication-config" content="<?php bloginfo('stylesheet_directory'); ?>/favicons/browserconfig.xml">
+	    <meta name="theme-color" content="#ffffff">
 
 		<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
 		<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />

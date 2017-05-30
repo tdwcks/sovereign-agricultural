@@ -750,6 +750,7 @@
 	height: auto;
 	overflow: auto;
 	width: 100%;
+	padding: 120px 0;
 
 
 	.col-8 {
@@ -771,6 +772,10 @@
 	img {
 		width: 100%;
 		height: auto;
+	}
+
+	@include mq("small", "max-width") {
+			padding: 40px 0;
 	}
 }
 

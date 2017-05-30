@@ -1754,7 +1754,8 @@ header {
 .post-content {
   height: auto;
   overflow: auto;
-  width: 100%; }
+  width: 100%;
+  padding: 120px 0; }
   .post-content .col-8 {
     float: none;
     display: block;
@@ -1770,3 +1771,6 @@ header {
   .post-content img {
     width: 100%;
     height: auto; }
+  @media (max-width: 960px) {
+    .post-content {
+      padding: 40px 0; } }
