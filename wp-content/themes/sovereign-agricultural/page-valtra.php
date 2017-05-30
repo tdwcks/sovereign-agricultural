@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	
+
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<section class="hero-static">
@@ -30,7 +30,7 @@
 			<?php endif; ?>
 		</div>
 	</section>
-					
+
 	<?php if( have_rows('series') ): $count = 0; ?>
 		<?php while ( have_rows('series') ) : the_row(); $count++; ?>
 
@@ -39,9 +39,7 @@
 				<?php while ( have_rows('tractors') ) : the_row(); ?>
 					<div class="tractor">
 						<div class="col-8">
-							<div class="image-square">
-								<img src="<?php the_sub_field('image'); ?>">
-							</div>
+							<div class="image-square" style="background-image: url('<?php the_sub_field('image'); ?>');"></div>
 						</div>
 						<div class="col-4">
 							<h3><?php the_sub_field('title'); ?></h3>
