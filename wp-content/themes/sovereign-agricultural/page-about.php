@@ -23,8 +23,8 @@
 		<section class="info">
 			<div class="grid-container">
 				<div class="col-6">
-					<h3><?php the_field('headline_one'); ?></h3>
-					<?php the_field('copy_one'); ?>
+					<h3><?php the_field('headline_two'); ?></h3>
+					<?php the_field('copy_two'); ?>
 				</div>
 			</div>
 		</section>
