@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	
+
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<section class="hero-static">
@@ -18,7 +18,7 @@
 			</div>
 		</section>
 		<section class="big-image">
-			<img src="<?php the_field('image_two'); ?>"> 
+			<img src="<?php the_field('image_two'); ?>">
 		</section>
 		<section class="info">
 			<div class="grid-container">
@@ -38,14 +38,14 @@
 					<?php if( have_rows('brands') ): ?>
 						<?php while ( have_rows('brands') ) : the_row(); ?>
 					<div class="col-3">
-						
-							<a href="<?php the_sub_field('link'); ?>">
-								<img src="<?php the_sub_field('logo'); ?>"> 
+
+							<a href="<?php the_sub_field('link'); ?>" target="_blank">
+								<img src="<?php the_sub_field('logo'); ?>">
 							</a>
-						
+
 					</div>
 					<?php endwhile; ?>
-					<?php endif; ?>			
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
