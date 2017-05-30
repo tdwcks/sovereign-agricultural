@@ -619,6 +619,14 @@
 		color: $colorTwo;
 	}
 
+	ul {
+		list-style: disc;
+		margin-left: 20px;
+		li {
+			line-height: 1.6em;
+		}
+	}
+
 	.image-square, .image {
 		width: 85%;
 	}

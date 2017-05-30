@@ -1605,6 +1605,11 @@ header {
     color: #203B4F; }
   .tractor h4 {
     color: #A32937; }
+  .tractor ul {
+    list-style: disc;
+    margin-left: 20px; }
+    .tractor ul li {
+      line-height: 1.6em; }
   .tractor .image-square, .tractor .image {
     width: 85%; }
   @media (max-width: 960px) {
