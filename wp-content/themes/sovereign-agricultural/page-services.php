@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	
+
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<section class="hero-static">
@@ -26,9 +26,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="image-half">
-				<img src="<?php the_field('image_two'); ?>"> 
-			</div>
+			<div class="image-half" style="background-image: url('<?php the_field('image_two'); ?>');"></div>
 		</section>
 		<section class="info">
 			<div class="grid-container">

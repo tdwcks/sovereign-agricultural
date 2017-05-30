@@ -1331,7 +1331,10 @@ header {
       position: absolute;
       z-index: 10;
       top: 0;
-      right: 0; }
+      right: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
     .info.image-info .image-half img {
       width: 130%;
       top: 0;
@@ -1598,7 +1601,8 @@ header {
   z-index: 1000;
   position: relative;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   .product-picker nav {
     float: none;
     display: inline-block;
@@ -1608,8 +1612,11 @@ header {
     cursor: pointer; }
     .product-picker nav ul li {
       float: left;
-      margin-right: 30px;
-      list-style-type: none; }
+      padding: 0 40px;
+      list-style-type: none;
+      border-right: 3px solid #A32937; }
+    .product-picker nav ul li:last-child {
+      border-right: none; }
     .product-picker nav ul li a {
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
@@ -1618,7 +1625,8 @@ header {
       transition: all 0.3s ease-in-out;
       color: #203B4F;
       text-decoration: none;
-      font-size: 0.89em; }
+      font-size: 1.3em;
+      font-family: "Industry", sans-serif; }
       .product-picker nav ul li a:hover {
         color: #A32937; }
     .product-picker nav a.active {

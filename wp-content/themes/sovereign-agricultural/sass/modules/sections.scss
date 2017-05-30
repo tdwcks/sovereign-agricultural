@@ -204,6 +204,9 @@
 			z-index: 10;
 			top: 0;
 			right: 0;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
 		}
 
 		.image-half img {
@@ -544,6 +547,7 @@
 	position: relative;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
 
 	nav {
 		float: none;
@@ -555,15 +559,21 @@
 
 		ul li {
 			float: left;
-			margin-right: 30px;
+			padding: 0 40px;
 			list-style-type: none;
+			border-right: 3px solid $colorTwo;
+		}
+
+		ul li:last-child {
+			border-right: none;
 		}
 
 		ul li a {
 			@include transition(all, 0.3s, ease-in-out);
 			color: $colorOne;
 			text-decoration: none;
-			font-size: 0.89em;
+			font-size: 1.3em;
+			font-family: $base-font-family;
 
 			&:hover {
 				color: $colorTwo;
