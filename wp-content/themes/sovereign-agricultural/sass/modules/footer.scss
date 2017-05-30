@@ -1,5 +1,5 @@
 // =================================================================
-// 	Sovereign Agricultural 
+// 	Sovereign Agricultural
 // 	Footer
 // =================================================================
 
@@ -47,12 +47,12 @@ footer {
 		}
 
 		p:last-child {
-			margin-bottom: 20px;	
+			margin-bottom: 20px;
 		}
 
 		&:last-child {
 			margin-right: auto;
-			
+
 		}
 	}
 
@@ -64,19 +64,23 @@ footer {
 		margin: 0 auto;
 		height: auto;
 		overflow: hidden;
-		width: 590px;
 		padding-top: 7px;
+		text-align: center;
 
-		ul li a {
-			padding-right: 20px;
-			text-decoration: none;
-			color: $colorOne;
-			border-right: 1px solid $colorOne;
-			font-weight: 600;
-			margin: 15px 20px 15px 0;
+		ul {
+			margin: 0 auto;
+			display: inline-block;
+			li a {
+				padding-right: 20px;
+				text-decoration: none;
+				color: $colorOne;
+				border-right: 1px solid $colorOne;
+				font-weight: 600;
+				margin: 15px 20px 15px 0;
 
-			&:hover {
-				color: $colorTwo;
+				&:hover {
+					color: $colorTwo;
+				}
 			}
 		}
 

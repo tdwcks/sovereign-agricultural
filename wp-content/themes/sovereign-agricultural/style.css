@@ -805,17 +805,20 @@ footer {
     margin: 0 auto;
     height: auto;
     overflow: hidden;
-    width: 590px;
-    padding-top: 7px; }
-    footer .menu-header-menu-container ul li a {
-      padding-right: 20px;
-      text-decoration: none;
-      color: #203B4F;
-      border-right: 1px solid #203B4F;
-      font-weight: 600;
-      margin: 15px 20px 15px 0; }
-      footer .menu-header-menu-container ul li a:hover {
-        color: #A32937; }
+    padding-top: 7px;
+    text-align: center; }
+    footer .menu-header-menu-container ul {
+      margin: 0 auto;
+      display: inline-block; }
+      footer .menu-header-menu-container ul li a {
+        padding-right: 20px;
+        text-decoration: none;
+        color: #203B4F;
+        border-right: 1px solid #203B4F;
+        font-weight: 600;
+        margin: 15px 20px 15px 0; }
+        footer .menu-header-menu-container ul li a:hover {
+          color: #A32937; }
     footer .menu-header-menu-container ul li {
       float: left;
       list-style-type: none; }
