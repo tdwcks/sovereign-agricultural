@@ -3,12 +3,10 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<section class="hero-static">
-		<div class="grid-container">
 			<div class="col-6">
-				<h1><?php the_title(); ?></h1>
+				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 			</div>
-		</div>
 		<img src="<?php the_post_thumbnail(); ?>">
 	</section>
 	<section class="info">
