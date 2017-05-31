@@ -815,14 +815,16 @@ footer {
       width: 100px;
       display: block;
       margin: 0 auto;
-      margin-bottom: 10px; }
+      margin-bottom: 35px;
+      font-size: 1.32em; }
     footer .row p {
       text-align: center;
       padding: 10px 0;
-      font-family: "Industry", sans-serif;
-      font-size: 1em;
+      font-family: "Avenir Next", sans-serif;
+      font-size: .9em;
       font-weight: 700;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #203B4F; }
     footer .row p a {
       color: #203B4F;
       border-bottom: 1px solid #A32937;
@@ -858,6 +860,7 @@ footer {
         color: #203B4F;
         border-right: 3px solid #203B4F;
         font-weight: 600;
+        font-size: .9em;
         margin: 15px 20px 15px 0; }
         footer .menu-header-menu-container ul li a:hover {
           color: #A32937; }
@@ -879,7 +882,8 @@ footer {
       text-decoration: none;
       color: #203B4F;
       text-transform: uppercase;
-      font-weight: 600; }
+      font-weight: 600;
+      font-size: .9em; }
     footer .btn-holder .btn {
       position: relative;
       display: inline-block;

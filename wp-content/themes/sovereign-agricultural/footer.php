@@ -15,18 +15,29 @@
 				<div class="row">
 					<h4>Sovereign <span>Agricultural</span></h4>
 					<p>Woolrow Lane, Shelley, Huddersfield, HD8 8LW</p>
-					<p>Tel: <a href="tel:01484 603682">01484 603682</a>  |   Email: <a href="mailto:sales@sovagric.com">sales@sovagric.com</a>   |   Fax: 01484 604782</p>
+
+					<div class="menu-header-menu-container">
+						<ul class="menu">
+							<li class="menu-item"><a href="tel:01484 603682">Tel: 01484 603682</a></li>
+							<li class="menu-item"><a href="mailto:sales@sovagric.com">Email: sales@sovagric.com</a></li>
+							<li class="menu-item"><a href="#">Fax: 01484 604782</a></li>
+						</ul>
+					</div>
+
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
 					<div class="btn-holder">
 						<div class="btn">
-							<img src="<?= get_template_directory_uri(); ?>/img/facebook_icon.svg" width="60">
 							<a href="https://www.facebook.com/sovereignagricutural/">
+								<img src="<?= get_template_directory_uri(); ?>/img/facebook_icon.svg" width="60">
 								Facebook
 							</a>
 						</div>
 						<div class="btn">
-							<img src="<?= get_template_directory_uri(); ?>/img/back_to_top.svg" width="60">
-							<a href="#" class="scroll-to-top">Back To Top</a>
+							<a href="#" class="scroll-to-top">
+								<img src="<?= get_template_directory_uri(); ?>/img/back_to_top.svg" width="60">
+								Back To Top
+							</a>
 						</div>
 					</div>
 				</div>
