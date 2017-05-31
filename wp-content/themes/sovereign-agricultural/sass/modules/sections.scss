@@ -343,16 +343,17 @@
 		display: block;
 		margin: 0 auto;
 		width: 290px;
+		text-align: center;
 
 		p {
 			margin-top: 30px;
 			display: inline-block;
 			font-weight: 700;
 
-			&.light {
-				font-weight: 500;
-				margin-left: 5px;
-			}
+		}
+		span {
+			font-weight: 500;
+			margin-left: 5px;
 		}
 	}
 

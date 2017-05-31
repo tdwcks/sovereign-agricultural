@@ -1456,14 +1456,15 @@ header {
   .quote .name {
     display: block;
     margin: 0 auto;
-    width: 290px; }
+    width: 290px;
+    text-align: center; }
     .quote .name p {
       margin-top: 30px;
       display: inline-block;
       font-weight: 700; }
-      .quote .name p.light {
-        font-weight: 500;
-        margin-left: 5px; }
+    .quote .name span {
+      font-weight: 500;
+      margin-left: 5px; }
   @media (max-width: 960px) {
     .quote {
       padding: 50px 0 30px 0; }
