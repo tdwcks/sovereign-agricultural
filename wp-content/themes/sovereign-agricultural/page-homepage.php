@@ -85,7 +85,7 @@
 					<?php the_field('quote'); ?>
 					<img src="<?php echo get_site_url(); ?>/wp-content/themes/sovereign-agricultural/img/signature.png">
 					<div class="name">
-						<p>John Smith,<p class="light">Managing Director</p></p>
+						<p>Tim Bennet,<p class="light">Director</p></p>
 					</div>
 				</div>
 			</div>
