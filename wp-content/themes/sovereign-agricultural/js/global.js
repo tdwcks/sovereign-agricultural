@@ -13,22 +13,24 @@ $( ".product-picker nav ul li a" ).on( "click", function() {
  	$('#' + name).toggleClass('active');
 });
 
-// Mobile Menu 
+// Mobile Menu
 
 $(".hamburger" ).on( "click", function() {
 	$('header').toggleClass('nav-active');
 });
 
-// Scroll to top 
+// Scroll to top
 $(".scroll-to-top" ).on( "click", function() {
 	$("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
-// Sticky Valtra 
+// Sticky Valtra
 
  $(document).ready(function(){
  	var top = $('header').outerHeight();
     $(".product-picker").sticky({topSpacing:top});
+
+
   });
 
 // Swiper Javascript
@@ -40,3 +42,4 @@ var swiper = new Swiper('.swiper-container', {
     prevButton: '.swiper-button-prev',
     spaceBetween: 30
 });
+
