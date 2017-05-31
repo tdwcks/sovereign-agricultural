@@ -1479,7 +1479,8 @@ header {
   overflow: hidden;
   background: #203B4F;
   position: relative;
-  padding: 80px 0 70px 0; }
+  padding: 80px 0 70px 0;
+  text-align: center; }
   .contact-cta:before {
     content: '';
     position: absolute;
@@ -1487,45 +1488,67 @@ header {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url("img/cta_grass.png") no-repeat center center; }
+    background: url("img/cta_grass.png") center center; }
   .contact-cta h3 {
     color: #fff;
-    font-size: 1.6em; }
-  .contact-cta h4 {
-    font-size: 1.3em;
+    font-size: 2em;
     float: left;
+    margin-right: 50px; }
+  .contact-cta h4 {
+    font-size: 2em;
     color: #fff;
-    display: block;
+    display: inline-block;
+    float: left;
     border-bottom: 2px solid #fff; }
+  .contact-cta .grid-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: inline-block;
+    width: auto; }
   .contact-cta .btn-one {
-    margin-top: -6px;
+    margin-top: 6px;
     background: #fff;
     color: #203B4F;
-    float: right;
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
     padding: 15px 50px; }
     .contact-cta .btn-one:hover {
       background: #A32937;
       color: #fff; }
-  @media (max-width: 960px) {
-    .contact-cta .col-6 {
-      width: 100%; }
-    .contact-cta h3 {
+  @media (max-width: 1415px) {
+    .contact-cta h3, .contact-cta h4 {
       text-align: center;
-      font-size: 1.7em;
-      display: block; }
-    .contact-cta h4 {
-      display: inline-block;
-      margin: 20px 0 30px 0;
-      text-align: center;
-      width: 100%;
-      border-bottom: 0; }
+      float: none; }
     .contact-cta .btn-one {
       display: inline-block;
       float: none;
-      margin: 0 auto;
+      margin: 30px auto 0;
       display: block;
       width: 140px;
       text-align: center; } }
+  @media (max-width: 960px) {
+    .contact-cta {
+      padding: 30px 0 20px 0; }
+      .contact-cta .col-6 {
+        width: 100%; }
+      .contact-cta h3 {
+        text-align: center;
+        font-size: 1.7em;
+        display: block; }
+      .contact-cta h4 {
+        display: inline-block;
+        margin: 20px 0 30px 0;
+        text-align: center;
+        width: 100%;
+        border-bottom: 0; }
+      .contact-cta .btn-one {
+        display: inline-block;
+        float: none;
+        margin: 0 auto;
+        display: block;
+        width: 140px;
+        text-align: center; } }
 
 .big-image {
   width: 100%;
@@ -1675,7 +1698,8 @@ header {
     -o-transform: translate(0%, -50%);
     transform: translate(0%, -50%); }
   .tractor h3 {
-    color: #203B4F; }
+    color: #203B4F;
+    text-align: left; }
   .tractor h4 {
     color: #A32937; }
   .tractor ul {
@@ -1688,6 +1712,14 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; }
+  @media (max-width: 1130px) {
+    .tractor .col-4 {
+      position: relative;
+      -webkit-transform: translate(0%, 0%);
+      -moz-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+      -o-transform: translate(0%, 0%);
+      transform: translate(0%, 0%); } }
   @media (max-width: 960px) {
     .tractor .col-4 {
       -webkit-transform: translate(0%, 0%);

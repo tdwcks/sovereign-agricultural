@@ -1,13 +1,9 @@
 
 		<section class="contact-cta">
 			<div class="grid-container">
-				<div class="col-6">
-					<h3>looking for repairs or maintenance?</h3>
-				</div>
-				<div class="col-6">
-					<h4>We're here to help</h4>
-					<a class="btn-one" href="<?php echo get_site_url(); ?>/contact">Find Out More</a>
-				</div>
+				<h3>looking for repairs or maintenance?</h3>
+				<h4>We're here to help</h4>
+				<a class="btn-one" href="<?php echo get_site_url(); ?>/contact">Find Out More</a>
 			</div>
 		</section>
 		<footer>
