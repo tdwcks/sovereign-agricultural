@@ -1245,7 +1245,7 @@ header {
     bottom: 0; }
   .hero-static h2 {
     text-transform: uppercase;
-    font-size: 3.8em;
+    font-size: 5em;
     text-align: center;
     color: #fff;
     padding-bottom: 0;
@@ -1268,6 +1268,8 @@ header {
     transform: translate(-50%, -50%);
     z-index: 10; }
   @media (max-width: 960px) {
+    .hero-static h2 {
+      font-size: 3.8em; }
     .hero-static img {
       width: 250%;
       bottom: auto;
@@ -1519,7 +1521,8 @@ header {
   @media (max-width: 1415px) {
     .contact-cta h3, .contact-cta h4 {
       text-align: center;
-      float: none; }
+      float: none;
+      margin: 0; }
     .contact-cta .btn-one {
       display: inline-block;
       float: none;
