@@ -634,8 +634,8 @@
 		}
 	}
 
-	@include mq("medium", "max-width") {
-		nav { width: 1120px; }
+	@media (max-width: 1125px) {
+		nav { width: 1060px; }
 	}
 	@include mq("small", "max-width") {
 		nav ul li {

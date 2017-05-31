@@ -85,7 +85,7 @@
 					<?php the_field('quote'); ?>
 					<img src="<?php echo get_site_url(); ?>/wp-content/themes/sovereign-agricultural/img/signature.png">
 					<div class="name">
-						<p>Tim Bennet,<span class="light">Director</span></p>
+						<p>Tim Bennett,<span class="light">Director</span></p>
 					</div>
 				</div>
 			</div>

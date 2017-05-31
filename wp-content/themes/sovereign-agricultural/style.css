@@ -1671,9 +1671,9 @@ header {
       color: #A32937; }
     .product-picker nav a.active:hover {
       color: #203B4F; }
-  @media (max-width: 1130px) {
+  @media (max-width: 1125px) {
     .product-picker nav {
-      width: 1120px; } }
+      width: 1060px; } }
   @media (max-width: 960px) {
     .product-picker nav ul li {
       margin-right: 15px; }
