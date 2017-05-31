@@ -162,12 +162,7 @@ header {
 			box-sizing: border-box;
 			color: #fff;
 
-			&:before {
-				margin-top: 1px;
-				background: url("img/phone-white.svg") no-repeat center center;
-				width:18px;
-				height: 18px;
-			}
+			i { color: #fff; margin-right: 5px; font-size: 1.1em; }
 		}
 
 		&.nav-active {

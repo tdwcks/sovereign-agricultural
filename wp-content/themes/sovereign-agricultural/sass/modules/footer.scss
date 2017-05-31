@@ -141,6 +141,15 @@ footer {
 
 	@include mq("small", "max-width") {
 
+		.btn-holder .btn {
+			padding-left: 40px;
+   			margin: 10px 10px 0;
+			img {
+				width: 30px;
+				top: -10px;
+			}
+		}
+
 		.menu-header-menu-container {
 			display: none;
 		}

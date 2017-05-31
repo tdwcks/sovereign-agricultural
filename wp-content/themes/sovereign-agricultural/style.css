@@ -896,6 +896,12 @@ footer {
     footer .btn-holder a:last-child {
       float: right; }
   @media (max-width: 960px) {
+    footer .btn-holder .btn {
+      padding-left: 40px;
+      margin: 10px 10px 0; }
+      footer .btn-holder .btn img {
+        width: 30px;
+        top: -10px; }
     footer .menu-header-menu-container {
       display: none; } }
 
@@ -1133,11 +1139,10 @@ header {
         width: 100%;
         box-sizing: border-box;
         color: #fff; }
-        header .telephone:before {
-          margin-top: 1px;
-          background: url("img/phone-white.svg") no-repeat center center;
-          width: 18px;
-          height: 18px; }
+        header .telephone i {
+          color: #fff;
+          margin-right: 5px;
+          font-size: 1.1em; }
       header.nav-active {
         padding-bottom: 0; }
         header.nav-active .hamburger {
