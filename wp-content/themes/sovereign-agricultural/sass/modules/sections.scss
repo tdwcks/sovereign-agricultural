@@ -15,7 +15,7 @@
 		background: none;
 
 		img {
-			width: 100%;
+			width: 120%;
 			height: auto;
 			top: auto;
 			position: absolute;
@@ -50,9 +50,16 @@
 		}
 	}
 
-	@include mq("medium", "max-width") {
+	@include mq("extra-large", "min-width") {
 		.swiper-slide img {
-			width: 130%;
+			width: 100%;
+		}
+	}
+
+	@include mq("medium", "max-width") {
+
+		.swiper-slide img {
+			width: 140%;
 		}
 	}
 

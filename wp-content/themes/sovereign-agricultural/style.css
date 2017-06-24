@@ -1184,7 +1184,7 @@ header {
     overflow: hidden;
     background: none; }
     .hero .swiper-slide img {
-      width: 100%;
+      width: 120%;
       height: auto;
       top: auto;
       position: absolute;
@@ -1214,9 +1214,12 @@ header {
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 10; }
+  @media (min-width: 1450px) {
+    .hero .swiper-slide img {
+      width: 100%; } }
   @media (max-width: 1170px) {
     .hero .swiper-slide img {
-      width: 130%; } }
+      width: 140%; } }
   @media (max-width: 960px) {
     .hero .swiper-slide {
       height: 85vh; }
