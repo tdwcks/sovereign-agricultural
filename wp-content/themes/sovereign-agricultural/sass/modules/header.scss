@@ -93,13 +93,11 @@ header {
 	}
 
 	@include mq("medium", "max-width") {
-		.telephone {
-			display: none;
-		}
+	
 
 		nav {
-			float: right;
-			margin-left: 0;
+			float: left;
+			margin-left: 85px;
 		}
 	}
 

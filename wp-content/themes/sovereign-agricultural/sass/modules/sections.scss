@@ -50,6 +50,12 @@
 		}
 	}
 
+	@include mq("medium", "max-width") {
+		.swiper-slide img {
+			width: 130%;
+		}
+	}
+
 	@include mq("small", "max-width") {
 		.swiper-slide {
 			height: 85vh;
