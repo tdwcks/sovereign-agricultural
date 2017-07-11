@@ -15,7 +15,7 @@
 		background: none;
 
 		img {
-			width: 100%;
+			width: 120%;
 			height: auto;
 			top: auto;
 			position: absolute;
@@ -47,6 +47,19 @@
 			left: 50%;
 			@include transform(translate(-50%, -50%));
 			z-index: 10;
+		}
+	}
+
+	@include mq("extra-large", "min-width") {
+		.swiper-slide img {
+			width: 100%;
+		}
+	}
+
+	@include mq("medium", "max-width") {
+
+		.swiper-slide img {
+			width: 140%;
 		}
 	}
 
