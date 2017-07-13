@@ -946,19 +946,18 @@ form {
     padding: 15px 15px;
     margin: 20px 0;
     font-family: "Industry", sans-serif;
-    border: 1px solid RGBA(240, 237, 237, 1);
-    background: #EEF0F1;
-    border: 0;
+    border: 2px solid #ddd;
+    background: #fff;
     font-size: 0.9em;
     box-sizing: border-box;
     border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none; }
+    appearance: none;
+    transition: .25s all ease-in; }
     form input[type="text"]:focus, form input[type="email"]:focus, form input[type="tel"]:focus, form input[type="submit"]:focus, form textarea:focus, form button:focus {
       outline: 0;
-      border: 0;
-      background: #e0e4e5; }
+      border: 2px solid #A32937; }
   form input[type="submit"] {
     width: 200px;
     margin-top: 0;

@@ -1,5 +1,5 @@
 // =================================================================
-// 	Sovereign Agricultural 
+// 	Sovereign Agricultural
 // 	Forms
 // =================================================================
 
@@ -21,20 +21,19 @@ form {
 		padding: 15px 15px;
 		margin: 20px 0;
 		font-family: $base-font-family;
-		border: 1px solid RGBA(240, 237, 237, 1.00);
-		background: #EEF0F1;
-		border: 0;
+		border: 2px solid #ddd;
+		background: #fff;
 		font-size: 0.9em;
 		box-sizing: border-box;
 		border-radius: 0;
 		-webkit-appearance: none;
    		-moz-appearance: none;
    		appearance: none;
+   		transition: .25s all ease-in;
 
 		&:focus {
 			outline: 0;
-			border: 0;
-			background: darken(#EEF0F1, 5%);
+			border: 2px solid $colorTwo;
 		}
 	}
 

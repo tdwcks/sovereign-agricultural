@@ -18,6 +18,12 @@
 		</div>
 	</section>
 	<section class="contact-form">
+		<div class="info grid-container" style="padding-bottom: 0;">
+			<div class="col-6">
+				<h3>Contact Us</h3>
+				<p>Fill out the form below and we will get back to you.</p>
+			</div>
+		</div>
 		<div class="grid-container">
 			<?php echo do_shortcode('[contact-form-7 id="125" title="Contact form 1"]') ?>
 		</div>
