@@ -22,6 +22,8 @@
 
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 
+					<p>We are Sovereign Agricultural Services LTD. Based in Huddersfield, West Yorkshire<br>we have been servicing the agricultural industry for over 40 years.</p>
+
 					<div class="btn-holder">
 						<div class="btn">
 							<a href="https://www.facebook.com/sovereignagricutural/">
@@ -43,7 +45,7 @@
 		<img src="<?= get_template_directory_uri(); ?>/img/footer_grass.png" class="hay-bale">
 		<div class="bottom-bar">
 			<div class="grid-container">
-				<p>&copy; <?php echo date("Y"); ?> Sovereign Agricultural services Limited. all rights reserved. designed by <a href="https://aye.agency" target="_blank">aye.agency</a></p>
+				<p>&copy; <?php echo date("Y"); ?> Sovereign Agricultural Services LTD. all rights reserved. designed by <a href="https://aye.agency" target="_blank">aye.agency</a></p>
 			</div>
 		</div>
 	</div>
