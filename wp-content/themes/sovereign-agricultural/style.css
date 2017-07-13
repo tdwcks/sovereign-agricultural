@@ -1238,9 +1238,15 @@ header {
 
 .hero-static {
   width: 100%;
-  height: 90vh;
   overflow: hidden;
   position: relative; }
+  .hero-static:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.25); }
   .hero-static img {
     width: 100%;
     height: auto;
@@ -1375,6 +1381,9 @@ header {
       .info .col-6 {
         float: left;
         width: 100%; } }
+
+.team {
+  padding: 0 0 100px 0; }
 
 .tripple-box .box {
   width: 33.3%;

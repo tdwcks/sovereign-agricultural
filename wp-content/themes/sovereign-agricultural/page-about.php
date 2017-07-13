@@ -17,6 +17,14 @@
 				</div>
 			</div>
 		</section>
+		<section class="info team">
+			<div class="grid-container">
+				<div class="col-6">
+					<h3><?php the_field('team_headline'); ?></h3>
+					<?php the_field('team_copy'); ?>
+				</div>
+			</div>
+		</section>
 		<section class="big-image">
 			<img src="<?php the_field('image_two'); ?>">
 		</section>

@@ -11,6 +11,7 @@ $( ".product-picker nav ul li a" ).on( "click", function() {
  	$(this).toggleClass('active');
  	var name = $(this).attr("name");
  	$('#' + name).toggleClass('active');
+    $('html, body').animate({scrollTop: $('#' + name).offset().top - 150}, 500);
 });
 
 // Mobile Menu
@@ -29,8 +30,6 @@ $(".scroll-to-top" ).on( "click", function() {
  $(document).ready(function(){
  	var top = $('header').outerHeight();
     $(".product-picker").sticky({topSpacing:top});
-
-
   });
 
 // Swiper Javascript
