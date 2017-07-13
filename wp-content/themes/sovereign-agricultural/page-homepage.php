@@ -83,9 +83,9 @@
 			<div class="grid-container">
 				<div class="col-6">
 					<?php the_field('quote'); ?>
-					<img src="<?php echo get_site_url(); ?>/wp-content/themes/sovereign-agricultural/img/signature.png">
+					<img src="<?= get_site_url(); ?>/wp-content/themes/sovereign-agricultural/img/signature-2.png">
 					<div class="name">
-						<p>Tim Bennett,<span class="light">Director</span></p>
+						<p>Gordon Dearnley,<span class="light">Director</span></p>
 					</div>
 				</div>
 			</div>

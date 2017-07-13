@@ -86,6 +86,7 @@ body {
 
 @media (max-width: 760px) {
   width: 90%; }
+
 .row + .row {
   margin-top: 30px; }
 
@@ -314,24 +315,28 @@ small, .font_small {
   src: url("sass/fonts/avenir-next-regular.eot?#iefix") format("embedded-opentype"), url("sass/fonts/avenir-next-regular.woff") format("woff"), url("sass/fonts/avenir-next-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'Avenir Next';
   src: url("sass/fonts/avenir-next-italic.eot");
   src: url("sass/fonts/avenir-next-italic.eot?#iefix") format("embedded-opentype"), url("sass/fonts/avenir-next-italic.woff") format("woff"), url("sass/fonts/avenir-next-italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
+
 @font-face {
   font-family: 'Avenir Next';
   src: url("sass/fonts/avenir-next-bold.eot");
   src: url("sass/fonts/avenir-next-bold.eot?#iefix") format("embedded-opentype"), url("sass/fonts/avenir-next-bold.woff") format("woff"), url("sass/fonts/avenir-next-bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal; }
+
 @font-face {
   font-family: 'Avenir Next';
   src: url("sass/fonts/avenir-next-thin.eot");
   src: url("sass/fonts/avenir-next-thin.eot?#iefix") format("embedded-opentype"), url("sass/fonts/avenir-next-thin.woff") format("woff"), url("sass/fonts/avenir-next-thin.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
+
 .image {
   position: relative;
   width: 100%;
@@ -626,9 +631,9 @@ small, .font_small {
 @media (max-width: 960px) {
   .swiper-button-next, .swiper-button-prev {
     display: block; }
-
   .swiper-pagination {
     display: none; } }
+
 .swiper-slide {
   text-align: left; }
 
@@ -1433,6 +1438,7 @@ header {
       background: #A32937;
       margin-top: 10px;
       display: block; }
+
 @media (max-width: 960px) {
   .tripple-box .box {
     width: 100%; } }
@@ -1722,6 +1728,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; }
+    .tractor .image-square:before, .tractor .image:before {
+      padding-top: 85%; }
   @media (max-width: 1170px) {
     .tractor .col-4 {
       position: relative;
@@ -1751,8 +1759,10 @@ header {
 .tractor:nth-child(even) .col-4 {
   left: 0;
   right: auto; }
+
 .tractor:nth-child(even) .col-8 {
   float: right; }
+
 .tractor:nth-child(even) .col-8 .image-square {
   float: right; }
 
@@ -1778,18 +1788,22 @@ header {
 .news-item a {
   color: #203B4F;
   text-decoration: none; }
+
 .news-item img {
   width: 100%;
   height: auto; }
+
 .news-item h2 {
   color: #A32937;
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 25px;
   padding-bottom: 10px; }
+
 .news-item .btn-one {
   margin-top: 15px;
   background: #203B4F; }
+
 .news-item:hover > .btn-one {
   background: #A32937; }
 
@@ -1816,5 +1830,3 @@ header {
   @media (max-width: 960px) {
     .post-content {
       padding: 40px 0; } }
-
-/*# sourceMappingURL=style.css.map */

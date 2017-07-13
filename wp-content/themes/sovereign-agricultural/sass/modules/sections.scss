@@ -717,6 +717,9 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
+		&:before {
+			padding-top: 85%;
+		}
 	}
 
 	@include mq("medium", "max-width") {
