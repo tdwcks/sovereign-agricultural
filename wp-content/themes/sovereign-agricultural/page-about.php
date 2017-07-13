@@ -3,11 +3,11 @@
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<section class="hero-static">
-				<div class="col-6">
-					<h2><?php the_title(); ?></h2>
-					<?php the_content(); ?>
-				</div>
-			<img src="<?php wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>">
+			<div class="col-6">
+				<h2><?php the_title(); ?></h2>
+				<?php the_content(); ?>
+			</div>
+			<img src="<?= wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>">
 		</section>
 		<section class="info">
 			<div class="grid-container">

@@ -6,7 +6,7 @@
 				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 			</div>
-		<img src="<?php wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>">
+		<img src="<?= wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>">
 	</section>
 	<section class="news">
 		<div class="grid-container">
