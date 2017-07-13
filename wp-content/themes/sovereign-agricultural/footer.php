@@ -49,6 +49,7 @@
 			</div>
 		</div>
 	</div>
+
 	<script src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.sticky.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/embetter.js"></script>
@@ -67,8 +68,5 @@
 	  ga('create', 'UA-100138649-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
-
-	<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
-	<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
 	</body>
 </html>

@@ -23,6 +23,9 @@
 	    <meta name="msapplication-config" content="<?php bloginfo('stylesheet_directory'); ?>/favicons/browserconfig.xml">
 	    <meta name="theme-color" content="#ffffff">
 
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+
 		<script src="https://use.typekit.net/gce6yyu.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<!--[if IE]>
