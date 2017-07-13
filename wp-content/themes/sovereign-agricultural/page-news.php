@@ -6,11 +6,11 @@
 				<h2><?php the_title(); ?></h2>
 				<?php the_content(); ?>
 			</div>
-		<img src="<?php the_post_thumbnail(); ?>">
+		<img src="<?php wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>">
 	</section>
 	<section class="news">
 		<div class="grid-container">
-		<?php if( have_posts() ): ?>	
+		<?php if( have_posts() ): ?>
 
 	        <?php while( have_posts() ): the_post(); ?>
 	        <div class="row">

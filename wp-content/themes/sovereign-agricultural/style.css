@@ -1202,7 +1202,9 @@ header {
       color: #fff;
       font-size: 1.3em;
       line-height: 1.3;
-      text-align: center; }
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto; }
     .hero .swiper-slide .slide-description {
       position: absolute;
       height: auto;
@@ -1258,7 +1260,9 @@ header {
     color: #fff;
     font-size: 1.3em;
     line-height: 1.3;
-    text-align: center; }
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; }
   .hero-static .col-6 {
     position: absolute;
     height: auto;
