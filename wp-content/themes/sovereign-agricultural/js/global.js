@@ -39,7 +39,8 @@ var swiper = new Swiper('.swiper-home', {
     paginationClickable: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    spaceBetween: 30
+    spaceBetween: 30,
+    loop: true,
 });
 
  var stock_swiper = new Swiper('.stock-swiper', {

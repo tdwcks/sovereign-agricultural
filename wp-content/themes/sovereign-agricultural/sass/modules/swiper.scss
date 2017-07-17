@@ -209,13 +209,15 @@
   width: 70px;
   height: 70px;
   position: absolute;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  top: inherit;
+  left: inherit;
   background: $colorBlack;
   cursor: pointer;
   @include transform(rotate(90deg));
   background-image: url('img/arrow-down.svg');
-  background-size: 30% 30%; 
+  background-size: 30% 30%;
   background-position: center center;
   background-repeat: no-repeat;
   margin-bottom: 0;
@@ -238,7 +240,7 @@
   right: 70px;
 }
 
-@include mq("small", "max-width") { 
+@include mq("small", "max-width") {
   .swiper-button-next, .swiper-button-prev {
     display: block;
   }
