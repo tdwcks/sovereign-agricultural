@@ -7,7 +7,8 @@
 			<div class="col-6">
 				<h2><?php the_title(); ?></h2>
 			</div>
-			<img src="<?php the_post_thumbnail(); ?>">
+			<img src="<?= wp_get_attachment_url( get_post_thumbnail_id($post->ID)); ?>">
+
 			<a class="back-btn" href="<?php echo get_site_url(); ?>/news">Back To News</a>
 		</section>
 

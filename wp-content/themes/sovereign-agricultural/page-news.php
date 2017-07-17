@@ -18,15 +18,15 @@
 
 			    <div class="news-item" id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
 
-		        	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(700,700) ); ?></a>
+	        		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(700,700) ); ?></a>
 
-		                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-						<?php the_excerpt(__('','')); ?>
+					<?php the_excerpt(__('','')); ?>
 
-						<span class="btn-one">Read More</span>
+					<a href="<?php the_permalink(); ?>"><span class="btn-one">Read More</span></a>
 
-		            </div><!-- /#post-<?php get_the_ID(); ?> -->
+		       	</div><!-- /#post-<?php get_the_ID(); ?> -->
 
 		        <?php endwhile; ?>
 
