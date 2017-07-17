@@ -34,7 +34,7 @@ $(".scroll-to-top" ).on( "click", function() {
 
 // Swiper Javascript
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-home', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     nextButton: '.swiper-button-next',
@@ -42,3 +42,13 @@ var swiper = new Swiper('.swiper-container', {
     spaceBetween: 30
 });
 
+ var stock_swiper = new Swiper('.stock-swiper', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoHeight: true,
+    loop: true,
+});

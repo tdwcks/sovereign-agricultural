@@ -41,4 +41,27 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+/*-----------------------------------------------------------------------------------*/
+/* Custom posts
+/*-----------------------------------------------------------------------------------*/
+
+function create_posttype() {
+
+	register_post_type( 'stock',
+		array(
+			'labels' => array(
+				'name' => __( 'Stock' ),
+				'singular_name' => __( 'Stock Item' )
+			),
+			'public' => true,
+			'has_archive' => false,
+			'menu_position' => 4,
+			'hierarchical' => true,
+			'menu_icon' => 'dashicons-align-center',
+			'supports' => array('thumbnail', 'title', 'editor'),
+		)
+	);
+}
+add_action('init', 'create_posttype');
+
 ?>

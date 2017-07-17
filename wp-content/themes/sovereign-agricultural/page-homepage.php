@@ -8,7 +8,7 @@
 
 			?>
 			<section class="hero">
-				<div class="swiper-container">
+				<div class="swiper-container swiper-home">
 		       		<div class="swiper-wrapper"><?php
 
 		 	// loop through the rows of data

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	<section class="hero-static">
 			<div class="col-6">
@@ -18,23 +18,44 @@
 		</div>
 	</section>
 	<section class="stock">
-		<?php while ( have_rows('stock') ) : the_row(); ?>
-			<div class="grid-container">
-				<div class="tractor">
-					<div class="col-8">
-						<div class="image">
-							<img src="<?php the_sub_field('image'); ?>">
+		<div class="large-9 columns">
+			<?php $args = array(
+				'post_type' => 'stock',
+				'post_status' => 'publish',
+				'posts_per_page' => '-1',
+				'orderby' => 'menu_order title',
+				'order' => 'ASC',
+			);
+			$stock = new WP_Query( $args );
+
+			if ($stock->have_posts()) : ?>
+				<div class="row">
+					<?php while ($stock->have_posts()) : $stock->the_post();
+						$image = get_the_post_thumbnail_url(); ?>
+
+						<div class="grid-container">
+							<div class="stock-item">
+								<div class="image" style="background-image: url('<?= $image ?>');"></div>
+								<div class="content">
+									<h3><?php the_title() ?></h3>
+									<h4><?php the_field('strap_line'); ?></h4>
+
+									<ul>
+									<?php while( have_rows('features') ): the_row();
+										$feature = get_sub_field('feature'); ?>
+										<li><?= $feature ?></li>
+									<?php endwhile; ?>
+									</ul>
+
+									<h3 class="price">£<?php the_field('price'); ?></h3>
+									<a href="<?php the_permalink(); ?>" class="btn-one">View More</a>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-4">
-						<h3><?php the_sub_field('title'); ?></h3>
-						<h4><?php the_sub_field('strapline'); ?></h4>
-						<p><?php the_sub_field('content'); ?></p>
-						<a target="_blank" class="btn-one" href="<?php the_sub_field('link'); ?>">View On Valtra.co.uk</a>
-					</div>
-				</div>
-			</div>
-		<?php endwhile; ?>
+			<?php endwhile;
+				wp_reset_postdata();
+			endif; ?>
+		</div>
 	</section>
 	<?php endwhile; endif; ?>
 <?php get_footer(); ?>
