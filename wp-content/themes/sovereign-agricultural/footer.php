@@ -9,7 +9,7 @@
 		<footer>
 			<div class="grid-container">
 				<div class="row">
-					<h4>Sovereign <span>Agricultural</span></h4>
+					<a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" class="logo" width="135" alt="Sovereign Agricultural Services Ltd"></a>
 					<p>Woolrow Lane, Shelley, Huddersfield, HD8 8LW</p>
 
 					<div class="menu-header-menu-container">

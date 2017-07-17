@@ -17,7 +17,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="stock">
+	<section class="stock-list">
 		<div class="large-9 columns">
 			<?php $args = array(
 				'post_type' => 'stock',

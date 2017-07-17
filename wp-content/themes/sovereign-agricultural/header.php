@@ -44,7 +44,7 @@
 
 		<header>
 			<div class="grid-container">
-				<a href="<?php echo get_site_url(); ?>"><h1>Sovereign<span>Agricultural</span></h1></a>
+				<a href="<?php echo get_site_url(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" class="logo" width="135" alt="Sovereign Agricultural Services Ltd"></a>
 				<a class="hamburger"></a>
 				<nav>
 					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>

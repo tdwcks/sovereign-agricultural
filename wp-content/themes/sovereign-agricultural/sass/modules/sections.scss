@@ -791,8 +791,9 @@
 	}
 }
 
-.stock {
+.stock-list {
 	margin-bottom: 100px;
+	.stock-item { margin-bottom: 60px; }
 }
 
 .stock-item {
@@ -804,9 +805,13 @@
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     margin: 2px auto;
-    padding: 25px 35px;
     max-width: 900px;
     position: relative;
+    padding: 25px 35px;
+    @include mq("medium", "max-width") {
+   		padding: 0;
+    }
+
     .image {
     	width: 45%;
     	float: left;
@@ -815,6 +820,10 @@
     	left: 0;
     	top: 0;
     	position: absolute;
+    	@include mq("medium", "max-width") {
+    		width: 100%;
+    		position: relative;
+    	}
     }
 
     .content {
@@ -822,6 +831,11 @@
     	float: right;
     	padding-left: 40px;
     	box-sizing: border-box;
+    	@include mq("medium", "max-width") {
+    		width: 100%;
+    		padding: 15px;
+    		margin-top: 15px;
+    	}
     }
 
     h4 {
@@ -857,6 +871,12 @@
 		color: $colorTwo;
 		margin-bottom: 5px;
 	}
+
+	@include mq("medium", "max-width") {
+		padding: 60px 0;
+		.col-8, .col-4 { width: 100%; padding: 15px; }
+		ul { margin-bottom: 0; }
+	}
 }
 
 .stock-swiper {
@@ -864,6 +884,9 @@
 	.swiper-button-prev {
 	    right: inherit;
 	    left: 0;
+	}
+	.swiper-button-prev, .swiper-button-next {
+	    top: 50%;
 	}
 	img {
 		display: inline-block;

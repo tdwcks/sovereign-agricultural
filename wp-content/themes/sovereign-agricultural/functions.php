@@ -57,7 +57,7 @@ function create_posttype() {
 			'has_archive' => false,
 			'menu_position' => 4,
 			'hierarchical' => true,
-			'menu_icon' => 'dashicons-align-center',
+			'menu_icon' => 'dashicons-archive',
 			'supports' => array('thumbnail', 'title', 'editor'),
 		)
 	);

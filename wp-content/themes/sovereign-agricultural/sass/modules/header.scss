@@ -14,7 +14,7 @@ header {
 	overflow: auto;
 	top: 0;
 	left: 0;
-	padding: 30px 0 26px 0;
+	padding: 23px 0 21px 0;
 	z-index: 100;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -36,9 +36,14 @@ header {
 		letter-spacing: .25px;
 	}
 
+	.logo {
+		float: left;
+	}
+
 	nav {
 		float: left;
 		margin-left: 300px;
+		margin-top: 8px;
 
 		ul li {
 			float: left;
@@ -77,6 +82,7 @@ header {
 		color: $colorOne;
 		float: right;
 		padding-top: 10px;
+		margin-top: 8px;
 		font-size: 0.89;
 		i { color: $colorTwo; margin-right: 5px; font-size: 1.1em; }
 
@@ -93,7 +99,7 @@ header {
 	}
 
 	@include mq("medium", "max-width") {
-	
+
 
 		nav {
 			float: left;
@@ -104,7 +110,7 @@ header {
 	@include mq("small", "max-width") {
 		z-index: 1000;
 
-		h1 {
+		.logo {
 			margin-left: 30px;
 		}
 
@@ -114,6 +120,7 @@ header {
 
 		.hamburger {
 			display: block;
+			margin-top: 13px;
 		}
 
 		nav {

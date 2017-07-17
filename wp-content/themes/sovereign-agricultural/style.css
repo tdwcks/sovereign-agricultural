@@ -1382,6 +1382,8 @@ footer {
     display: block;
     color: #A32937;
     letter-spacing: .25px; }
+  footer .logo {
+    margin-bottom: 30px; }
   footer .row {
     display: block;
     margin: 0 auto;
@@ -1607,7 +1609,7 @@ header {
   overflow: auto;
   top: 0;
   left: 0;
-  padding: 30px 0 26px 0;
+  padding: 23px 0 21px 0;
   z-index: 100;
   font-weight: 700;
   text-transform: uppercase; }
@@ -1624,9 +1626,12 @@ header {
     display: block;
     color: #A32937;
     letter-spacing: .25px; }
+  header .logo {
+    float: left; }
   header nav {
     float: left;
-    margin-left: 300px; }
+    margin-left: 300px;
+    margin-top: 8px; }
     header nav ul li {
       float: left;
       margin-right: 30px;
@@ -1658,6 +1663,7 @@ header {
     color: #203B4F;
     float: right;
     padding-top: 10px;
+    margin-top: 8px;
     font-size: 0.89; }
     header .telephone i {
       color: #A32937;
@@ -1670,12 +1676,13 @@ header {
   @media (max-width: 960px) {
     header {
       z-index: 1000; }
-      header h1 {
+      header .logo {
         margin-left: 30px; }
       header .grid-container {
         width: 100%; }
       header .hamburger {
-        display: block; }
+        display: block;
+        margin-top: 13px; }
       header nav {
         display: none;
         width: 100%;
@@ -2356,8 +2363,10 @@ header {
 .tractor:nth-child(even) .col-8 .image-square {
   float: right; }
 
-.stock {
+.stock-list {
   margin-bottom: 100px; }
+  .stock-list .stock-item {
+    margin-bottom: 60px; }
 
 .stock-item {
   float: none;
@@ -2368,9 +2377,12 @@ header {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   margin: 2px auto;
-  padding: 25px 35px;
   max-width: 900px;
-  position: relative; }
+  position: relative;
+  padding: 25px 35px; }
+  @media (max-width: 1170px) {
+    .stock-item {
+      padding: 0; } }
   .stock-item .image {
     width: 45%;
     float: left;
@@ -2379,11 +2391,20 @@ header {
     left: 0;
     top: 0;
     position: absolute; }
+    @media (max-width: 1170px) {
+      .stock-item .image {
+        width: 100%;
+        position: relative; } }
   .stock-item .content {
     width: 55%;
     float: right;
     padding-left: 40px;
     box-sizing: border-box; }
+    @media (max-width: 1170px) {
+      .stock-item .content {
+        width: 100%;
+        padding: 15px;
+        margin-top: 15px; } }
   .stock-item h4 {
     color: #A32937;
     margin-bottom: 15px; }
@@ -2412,6 +2433,14 @@ header {
   .stock-single h4, .stock-single h2 {
     color: #A32937;
     margin-bottom: 5px; }
+  @media (max-width: 1170px) {
+    .stock-single {
+      padding: 60px 0; }
+      .stock-single .col-8, .stock-single .col-4 {
+        width: 100%;
+        padding: 15px; }
+      .stock-single ul {
+        margin-bottom: 0; } }
 
 .stock-swiper .swiper-pagination {
   margin-bottom: 0; }
@@ -2419,6 +2448,9 @@ header {
 .stock-swiper .swiper-button-prev {
   right: inherit;
   left: 0; }
+
+.stock-swiper .swiper-button-prev, .stock-swiper .swiper-button-next {
+  top: 50%; }
 
 .stock-swiper img {
   display: inline-block;
