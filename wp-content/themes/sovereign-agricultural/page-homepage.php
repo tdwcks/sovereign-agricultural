@@ -18,8 +18,11 @@
 		       ?>
 		       <div class="swiper-slide">
 		       		<img src="<?php the_sub_field('image'); ?>">
-		       <?php ?><div class="slide-description"><h2><?php the_sub_field('headline'); ?></h2>
-		       <?php ?><?php the_sub_field('paragraph'); ?></div>
+		      		<div class="slide-description"><h2><?php the_sub_field('headline'); ?></h2>
+		       		<?php the_sub_field('paragraph'); ?>
+		       		<?php if(get_sub_field('link')): ?>
+						<a href="<?= the_sub_field('link'); ?>" class="btn-one"><?= the_sub_field('button_text'); ?></a>
+					<?php endif; ?></div>
 		       </div><?php
 
 		    endwhile;

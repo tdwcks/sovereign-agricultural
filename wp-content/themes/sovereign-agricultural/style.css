@@ -1798,7 +1798,6 @@ header {
     .hero .swiper-slide .slide-description {
       position: absolute;
       height: auto;
-      overflow: auto;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
@@ -1806,7 +1805,10 @@ header {
       -ms-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      z-index: 10; }
+      z-index: 10;
+      text-align: center; }
+      .hero .swiper-slide .slide-description .btn-one {
+        margin-top: 10px; }
   @media (min-width: 1450px) {
     .hero .swiper-slide img {
       width: 100%; } }
