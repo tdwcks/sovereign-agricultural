@@ -10,10 +10,10 @@
 	</section>
 	<section class="news">
 		<div class="grid-container">
-		<?php if( have_posts() ): ?>
+		<?php $i=0; if( have_posts() ): ?>
 
-	        <?php while( have_posts() ): the_post(); ?>
 	        <div class="row">
+	        <?php while( have_posts() ): the_post(); ?>
 		        <div class="col-4">
 
 			    <div class="news-item" id="post-<?php get_the_ID(); ?>" <?php post_class(); ?>>
@@ -28,13 +28,12 @@
 
 		       	</div><!-- /#post-<?php get_the_ID(); ?> -->
 
-		        <?php endwhile; ?>
+				</div>
+				<?php $i++; if ($i%3 == 0) echo '</div><div class="row" style="margin-top: 80px;">';
+				endwhile; ?>
 
 			<?php endif; wp_reset_query(); ?>
-			</div>
-		</div>
-		</div><!-- /#content -->
 		</div>
 	</section>
 
-<?php get_template_part('footer.php'); ?>
+<?php get_footer(); ?>

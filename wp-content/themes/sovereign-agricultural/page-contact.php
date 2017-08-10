@@ -34,7 +34,7 @@
 	var map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/outdoors-v10',
-	center: [-1.676638,53.60460], // starting position
+	center: [-1.684921, 53.603103], // starting position
 	scrollZoom: false,
   	zoom: 17 // starting zoom
 	});
@@ -53,7 +53,7 @@
                         "type": "Feature",
                         "geometry": {
                             "type": "Point",
-                            "coordinates": [-1.676638,53.60460]
+                            "coordinates": [-1.684921, 53.603103]
                         }
                     }]
                 }
